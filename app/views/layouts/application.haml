@@ -1,0 +1,13 @@
+!!!
+%html
+%head
+  %title Cri
+  = stylesheet_link_tag    "application"
+  = javascript_include_tag "application"
+  = csrf_meta_tags
+%body
+	-#= yield
+  %div#root
+		%div#root_footer &nbsp;
+	%div#footer
+		footer content
