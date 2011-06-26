@@ -1,0 +1,22 @@
+$footer-height : 50px;
+@import "compass/layout/sticky-footer";
+@include sticky-footer($footer-height, '#main');
+
+
+/* will want to remove this */
+header {
+	height : 50px;
+	background-color : #999999;
+}
+nav {
+	height : 50px;
+	background-color : #666666;
+}
+section#middle {
+	background-color : #333;
+	color : #fff;
+}
+footer {
+	height : $footer-height;
+	background-color : #999999;	
+}

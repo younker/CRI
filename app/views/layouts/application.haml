@@ -1,7 +1,7 @@
 !!!
 %html
 %head
-  %title Cri
+  %title CRI
   = stylesheet_link_tag    "application"
   = javascript_include_tag "application"
   = csrf_meta_tags
@@ -10,12 +10,12 @@
   /[if lt IE 8]
     = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
 %body
-  -#= yield
-  #main
+  #main.container
     %header this is the header
     %nav this is the navigation
-    %section#left Left
-    %section#middle Middle
-    %section#right Right
+    %section#left.span-8 Left
+    %section#middle.span-8= yield
+    %section#right.span-8.last Right
   %footer#footer
-    Footer content goes here.
+    %div.container
+      Footer content goes here.

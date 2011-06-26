@@ -1,109 +1,124 @@
-/* line 7, scss/ie.scss */
-body.bp {
+/* line 34, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
+body {
   text-align: center;
 }
 /* line 44, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-* html body.bp legend {
+* html body legend {
   margin: 0px -8px 16px 0;
   padding: 0;
 }
 /* line 48, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-html > body.bp p code {
+html > body p code {
   *white-space: normal;
 }
+
 /* line 60, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp .container {
+.container {
   text-align: left;
 }
+
 /* line 62, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp sup {
+sup {
   vertical-align: text-top;
 }
+
 /* line 64, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp sub {
+sub {
   vertical-align: text-bottom;
 }
+
 /* line 66, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp hr {
+hr {
   margin: -8px auto 11px;
 }
+
 /* line 68, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp img {
+img {
   -ms-interpolation-mode: bicubic;
 }
+
 /* line 70, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp fieldset {
+fieldset {
   padding-top: 0;
 }
+
 /* line 72, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp legend {
+legend {
   margin-top: -0.2em;
   margin-bottom: 1em;
   margin-left: -0.5em;
 }
+
 /* line 76, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp fieldset, body.bp #IE8#HACK {
+fieldset, #IE8#HACK {
   padding-top: 1.4em;
 }
+
 /* line 77, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp legend, body.bp #IE8#HACK {
+legend, #IE8#HACK {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 /* line 78, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp textarea {
+textarea {
   overflow: auto;
 }
+
 /* line 80, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp label {
+label {
   position: relative;
   top: -0.25em;
 }
+
 /* line 84, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp input.text {
+input.text {
   margin: 0.5em 0;
   background-color: white;
   border: 1px solid #bbbbbb;
 }
 /* line 88, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp input.text:focus {
+input.text:focus {
   border: 1px solid #666666;
 }
 /* line 90, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp input.title {
+input.title {
   margin: 0.5em 0;
   background-color: white;
   border: 1px solid #bbbbbb;
 }
 /* line 94, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp input.title:focus {
+input.title:focus {
   border: 1px solid #666666;
 }
 /* line 96, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp input.checkbox {
+input.checkbox {
   position: relative;
   top: 0.25em;
 }
 /* line 99, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp input.radio {
+input.radio {
   position: relative;
   top: 0.25em;
 }
 /* line 102, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp input.button {
+input.button {
   position: relative;
   top: 0.25em;
 }
+
 /* line 105, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp textarea {
+textarea {
   margin: 0.5em 0;
 }
+
 /* line 107, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp select {
+select {
   margin: 0.5em 0;
 }
+
 /* line 109, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_ie.scss */
-body.bp button {
+button {
   position: relative;
   top: 0.25em;
 }

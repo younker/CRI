@@ -1,17 +1,19 @@
-/* line 7, scss/print.scss */
-body.bp {
+/* line 24, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_print.scss */
+body {
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: black;
   background: none;
   font-size: 10pt;
 }
+
 /* line 45, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_print.scss */
-body.bp .container {
+.container {
   background: none;
 }
+
 /* line 47, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_print.scss */
-body.bp hr {
+hr {
   background: #cccccc;
   color: #cccccc;
   width: 100%;
@@ -21,53 +23,62 @@ body.bp hr {
   border: none;
 }
 /* line 55, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_print.scss */
-body.bp hr.space {
+hr.space {
   background: white;
   color: white;
 }
+
 /* line 58, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_print.scss */
-body.bp h1, body.bp h2, body.bp h3, body.bp h4, body.bp h5, body.bp h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
+
 /* line 60, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_print.scss */
-body.bp code {
+code {
   font-size: 0.9em;
   font-family: "andale mono", "lucida console", monospace;
 }
+
 /* line 65, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_print.scss */
-body.bp a img {
+a img {
   border: none;
 }
 /* line 68, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_print.scss */
-body.bp a:link, body.bp a:visited {
+a:link, a:visited {
   background: transparent;
   font-weight: 700;
   text-decoration: underline;
 }
+
 /* line 72, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_print.scss */
-body.bp p img.top {
+p img.top {
   margin-top: 0;
 }
+
 /* line 74, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_print.scss */
-body.bp blockquote {
+blockquote {
   margin: 1.5em;
   padding: 1em;
   font-style: italic;
   font-size: 0.9em;
 }
+
 /* line 79, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_print.scss */
-body.bp .small {
+.small {
   font-size: 0.9em;
 }
+
 /* line 81, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_print.scss */
-body.bp .large {
+.large {
   font-size: 1.1em;
 }
+
 /* line 83, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_print.scss */
-body.bp .quiet {
+.quiet {
   color: #999999;
 }
+
 /* line 85, ../../../../../Users/ynkr/.rvm/gems/ruby-1.8.7-p334@rails31beta/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_print.scss */
-body.bp .hide {
+.hide {
   display: none;
 }
