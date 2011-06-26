@@ -7,7 +7,8 @@ gem 'mysql2'
 # Asset template engines
 gem 'haml-rails'
 gem 'sass-rails', "~> 3.1.0.rc"
-gem 'compass'
+# gem "compass", ">= 0.11.3"
+gem 'compass', :git => 'https://github.com/chriseppstein/compass.git', :branch => 'rails31'
 gem 'coffee-script'
 gem 'uglifier'
 
