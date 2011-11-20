@@ -1,0 +1,36 @@
+:ruby
+  header(:right_col, render(:partial => 'shared/about/in_this_section'))
+  header(:breadcrumb, breadcrumb('About','Contact Us'))
+
+%div#new_contactC.clearfix
+  .span-7
+    %h3
+      Get in touch with us. Fill out the form and we will get back with you shortly!
+
+    %p
+      Child Refuge International
+      %br
+      (509) 123-1234
+      %br
+      contact@childrefugeinternational.com
+      
+
+  .span-8.last
+    = form_for @contact_form, :url => send_email_path do |f|
+      = render :partial => 'shared/user_notice', :locals => {:model_obj => @contact_form}
+
+      %fieldset#contact_info
+        .field
+          = f.text_field :sender_name, :placeholder => 'Your Name'
+
+        .field
+          = f.text_field :sender_email, :type => 'email', :placeholder => 'Your Email', :class => 'text'
+
+        .field
+          = f.text_field :subject, :placeholder => 'Subject Line'
+
+        .field
+          = f.text_area :body, :placeholder => 'Your Message to Us'
+
+        .actions.clearfix
+          = f.submit 'Send', :class => :button

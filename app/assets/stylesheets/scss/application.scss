@@ -1,3 +1,81 @@
-@import "compass/reset";
-@import "partials/layout";
 
+@import "compass/reset";
+
+@import "partials/droid_serif_font";
+@import "partials/layout";
+@import "partials/forms";
+@import "partials/overlay_modal";
+@import "partials/growl";
+@import "partials/buttons";
+@import "partials/standard_dl_layout";
+@import "partials/contact_form";
+@import "partials/faq";
+
+
+body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+ 	font-weight: 300;
+	letter-spacing : .08em;
+	font-size : 12px;
+}
+
+body * {
+	background-color : transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color : $primary-blue !important;
+}
+
+h1 {
+	@include page-title();
+}
+
+p {
+	margin : 1em 0;
+	line-height : 1.6em;
+}
+
+a {
+	text-decoration : none !important;
+	color : $primary-blue !important;
+
+	&:hover {
+		text-decoration : underline;
+	}
+}
+
+#left_col {}
+#right_col {
+	h3 {
+		@include droid();
+		color : $blue-grey;
+		font-size : 1.4em;
+		margin : 0 0 1em 1.3em;
+	}
+	
+	ul {
+		li {
+			line-height : 2.5em;
+			padding-left : 1em;
+			padding-right : 2em;
+			@include droid('bolditalic');
+
+			&.selected {
+				@include droid('italic');
+				@include inline-block();
+				@include border-radius();
+				background-color : $primary-blue;
+				color : $white;
+			}
+
+			a:hover {
+				color : $blue-grey !important;
+				text-decoration : underline !important;
+			}
+			
+		}
+	}
+}
+
+@import "partials/homepage";

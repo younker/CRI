@@ -1,0 +1,78 @@
+@import "compass/css3/border-radius";
+
+#growlcontainer {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 1000;
+  font-size: 1.1em;
+  width: 400px;
+
+  ol li {
+    list-style : decimal inside none;
+  }
+
+  .growlwithicon {
+    padding-left: 50px;
+  }
+  h2 {
+    color : #fff;
+    font-size : 1.4em;
+    border-bottom : 1px dotted #fff;
+    margin-bottom : 5px;
+    padding-bottom : 5px;
+  }
+  li {
+    font-size : .9em;
+    margin-bottom : 5px;
+  }
+}
+
+.growlstatus {
+  position: relative;
+  background : url(/assets/growl/opacity_60.png) repeat scroll 0px 0px transparent;
+  border: 3px #000 solid;
+  padding: 15px;
+  color: #fff;
+  margin-bottom: 5px;
+  @include border-radius();
+
+  .growltitle {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .growlstatusclose {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width:30px;
+    height:30px;
+    cursor: pointer;
+    display: none;
+    background: transparent url(/assets/growl/close.png) no-repeat;
+  }
+  &:hover {
+    background-color: #000;
+    border: 3px #666 solid;
+
+    .growlstatusclose {
+      display: block;
+    }
+  }
+}
+
+#growlicon {
+	height : 32px;
+	width  : 32px;
+	position : absolute;
+	top    : 6px;
+	left   : 9px;
+
+	&.growlicon_notice {
+	  background-image: url(/assets/growl/notice.png);
+	}
+	&.growlicon_error {
+		background-image: url(/assets/growl/error.png);
+	}
+}

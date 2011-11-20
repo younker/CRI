@@ -1,0 +1,10 @@
+:ruby
+  header(:right_col, render(:partial => 'shared/about/in_this_section'))
+  header(:breadcrumb, breadcrumb('About','Board of Directors'))
+
+= render :partial => 'member', :collection => @members
+
+- if can?(:create, Team::Member)
+  = link_to 'Add a Board Member', new_member_path, :class => :button
+
+

@@ -1,0 +1,21 @@
+:ruby
+  header(:right_col, render(:partial => 'blog/blogs/index/other_articles'))
+  header(:breadcrumb, breadcrumb('About','Mission Statement'))
+
+%section#blogs_index
+  %header
+    %h1= "#{@context.present? ? @context.context_type : ''}"
+
+  - if @blogs.empty?
+    %strong We're sorry, but no #{@context.context_type if @context.present?} blogs exist
+
+  - else
+    = render :partial => 'blog/blogs/index/blog', :collection => @blogs
+
+
+- if @context.present? && can?(:create, Blog)
+  %br{:clear => 'all'}= link_to "Create new '#{@context.context_type}' Blog", construct_blog_path(nil, :new, @context)
+
+%hr.space
+= will_paginate @blogs, :params => {:context => @context.terse_route}
+

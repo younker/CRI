@@ -1,3 +1,28 @@
+// Site Specific -----------------
+$primary-blue : #103d63;
+$font-color : #000000;
+$primary-grey : #9f9f9f;
+$light-grey : #f7f7f7;
+$blue-grey : #4e5c67;
+$white : #f0f0f0;
+
+
+// Compass/sass defaults
+$default-border-radius : 5px;
+$default-text-shadow-color : $white;
+$default-text-shadow-blur: 1px;
+$default-text-shadow-v-offset: 1px;
+$default-text-shadow-h-offset: 1px;
+
+@mixin page-title() {
+	font-size : 1.4em !important;
+  font-weight : 600 !important;
+  margin : 0 0 0.5em !important;
+}
+
+
+
+// Blueprint Specific -----------------
 // Here is where you can define your constants for your application and to configure the blueprint framework.
 // Feel free to delete these if you want keep the defaults:
 
@@ -8,3 +33,4 @@ $blueprint-grid-margin: 10px;
 // If you change your grid column dimensions
 // you can make a new grid background image from the command line like this:
 // compass grid-img 30+10x16
+

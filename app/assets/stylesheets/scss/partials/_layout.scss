@@ -1,22 +1,139 @@
-$footer-height : 50px;
-@import "compass/layout/sticky-footer";
-@include sticky-footer($footer-height, '#main');
+@import 'base';
+@import 'compass/css3/inline-block';
+@import 'compass/css3/gradient';
+@import 'compass/css3/text-shadow';
 
 
-/* will want to remove this */
-header {
-	height : 50px;
-	background-color : #999999;
+$layout_images : sprite-map("sprites/layout/*.png");
+
+@mixin layout_image($image_name) {
+  background : sprite($layout_images, $image_name) no-repeat !important;
 }
-nav {
-	height : 50px;
-	background-color : #666666;
+
+
+body {
+	background-color : $font-color;
+
+	> header {
+		height : 240px;
+		background : url(/assets/static/layout/header-bg.jpg) 0 0 repeat $primary-grey;
+		border-top : solid 5px $primary-blue !important;
+
+		.container {
+			height : 100%;
+			position : relative;
+
+			img#cri_logo {
+				@include layout_image('cri_logo');
+				height : 167px;
+				width : 257px;
+				position : absolute;
+				top : 36px;
+				left : 0px;
+			}
+
+			> ul {
+				position : absolute;
+				top : 133px;
+				left : 328px;
+
+				li {
+					margin-right : 3em;
+				}
+			}
+
+		}
+	}
+
+	> footer {
+		color : darken($white, 10%);
+		background-color : $font-color;
+		text-align : center;
+
+		a {
+			margin : 0 .5em;
+			color : $white !important;
+			text-decoration : none;
+		}
+
+		p {
+			margin-bottom : 2em;
+		}
+
+		// we have 2 possible footers, this is for the "top" one
+		&#top {
+			text-align : left;
+			height : 210px;
+			@include background-image(linear-gradient(darken($primary-blue, 10%), $primary-blue));
+			border-bottom : solid 5px $blue-grey;
+		}
+
+		&#bottom {
+			font-size : .9em;
+			ul {
+				margin : .5em auto;
+				line-height : 2em;
+				@include inline-block();
+			}
+		}
+	}
 }
-section#middle {
-	background-color : #333;
-	color : #fff;
+
+nav.banner {
+	height : 302px;
+	background : url(/assets/static/layout/paisley-bg.jpg) 0 0 repeat $primary-grey;
+
+	.container {}
 }
-footer {
-	height : $footer-height;
-	background-color : #999999;	
+
+section#breadcrumbC {
+	min-height : 30px;
+	background-color : $primary-blue;
+	color : $white;
+	border-bottom : solid 5px $blue-grey;
+	line-height : 66px;
+	font-size : 1.5em;
+	text-transform : uppercase;
+	@include droid();
+	@include text-shadow(darken($primary-blue, 20%), 2px, 2px, 1px);
 }
+
+section#contentC {
+	background-color : $white;
+	padding : 2em 0;
+}
+
+body > header, footer {
+ 	ul {
+		list-style-type : none;
+		margin : 0;
+		padding : 0;
+		text-transform : uppercase;
+		@include droid();
+	
+		li {
+			float : left;
+			margin-right : .5em;
+
+			&.last {
+				margin-right : 0;
+			}
+		}
+
+		&.header {
+			li.selected {
+				border-bottom : solid 4px $primary-blue;
+				padding-bottom : 4px;
+			}
+		}
+
+	}
+}
+
+img.curve_arrow, img.curve_arrow_white {
+	height : 9px;
+	width : 9px;
+	vertical-align : baseline;
+}
+img.curve_arrow { @include layout_image('arrow'); }
+img.curve_arrow_white { @include layout_image('arrow_white'); }

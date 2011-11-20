@@ -1,0 +1,24 @@
+= form_for user do |f|
+  = render :partial => 'shared/user_notice', :locals => {:model_obj => user}
+
+  %div.field
+    = f.label :email
+    = f.text_field :email
+
+  %div.field
+    = f.label :password
+    = f.text_field :password, :type => 'password'
+
+  %div.field
+    = f.label :password_confirmation
+    = f.text_field :password_confirmation, :type => 'password'
+
+  %div.field
+    = f.label :roles
+    - for role in User::ROLES
+      = check_box_tag "user[roles][]", role, @user.roles.include?(role)
+      = h role.humanize
+    = hidden_field_tag "user[roles][]", ""
+
+  %div.actions
+    = f.submit

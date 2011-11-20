@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Cri::Application.config.secret_token = 'cb5fa7665e9deb5303bae4e7d17c84646eea0942b050feb3e7d3746ef88db599bd322c31b3815b0aec93c2f95fd950c6e51298ceccd1708f8541397351f0128f'
+Cri::Application.config.secret_token = '6e6a7d9ec4cc5aaefa311d4ecd761c9825f2df6004bcbfd95ac59565cb5c416093059a9a5b21f1377d26da2895907b26503d29f77232e404045e8b5b07c24c87'

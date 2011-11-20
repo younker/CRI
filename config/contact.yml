@@ -1,0 +1,14 @@
+development:
+  host: localhost:3000
+  default_recipients: 'contact_engine@28dev.com'
+  smtp:
+    address: 'smtp.webfaction.com'
+    port: '25'
+    domain: 'webfaction.com'
+    authentication: 'login'
+    username: 'younker_test'
+    password: 'T3stpwd'
+  interceptor:
+    intercept: true
+    intercept_recipient: 'intercepted@28dev.com'
+

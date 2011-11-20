@@ -1,0 +1,13 @@
+%h2 User
+
+- %w[id email created_at updated_at].each do |attr|
+  .span-2= attr
+  .span-17.last= @user.send(attr)
+
+.span-2 Roles
+.span-17.last
+  - @user.roles.each do |role|
+    %div= role
+
+- if can?(:edit, @user)
+  = link_to 'edit user', edit_user_path(@user)

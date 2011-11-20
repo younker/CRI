@@ -1,0 +1,21 @@
+:ruby
+  links = [
+    [main_app.mission_statement_path, 'Mission Statement'],
+    [team_engine.team_path, 'Board of Directors'],
+    [main_app.contact_path, 'Contact Us'],
+    [main_app.faq_path, 'Frequently Asked Questions'],
+    [main_app.privacy_policy_path, 'Privacy Policy']
+  ]
+
+%nav
+  %header
+    %h3 In This Section
+
+  %section
+    %ul
+      - links.each do |(path, name)|
+        - selected = current_page?(path)
+        %li{:class => ('selected' if selected)}
+          = image_tag 'transparent.gif', :class => (selected ? :curve_arrow_white : :curve_arrow), :alt => '=>'
+          = link_to_unless selected, name, path
+

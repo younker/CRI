@@ -1,0 +1,27 @@
+%dl.team_member.clearfix
+  %dt
+    = image_tag member.photo.photo(:small)
+  %dd
+    %h3
+      = member.name
+      - if can?(:edit, Team::Member)
+        = link_to 'Edit', edit_member_path(member), :class => :edit
+
+
+    %h4= member.position
+
+    .contact_info
+      - %w[email cell_phone office_phone twitter facebook].each do |i|
+        - if member.send(i).present?
+          .row
+            .label= i.humanize
+            .value= member.send(i)
+
+    %p
+      - if controller.action_name == 'show'
+        = sanitize member.bio, :tags => allowable_html, :attributes => %w(href)
+      - else
+        = sanitize member.bio.truncate(325), :tags => allowable_html, :attributes => %w(href)
+        = link_to "more.", team_engine.member_path(member)
+
+

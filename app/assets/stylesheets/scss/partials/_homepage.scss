@@ -1,0 +1,100 @@
+@import "compass/css3/text-shadow";
+
+$homepage_images : sprite-map("sprites/homepage/*.png");
+
+@mixin homepage_image($image_name) {
+  background : sprite($homepage_images, $image_name) no-repeat !important;
+}
+
+#single_homepage {
+	nav.banner {
+		.container {
+			position : relative;
+			height : 100%;
+
+			header {
+				font-size : 3.8em;
+				margin : 77px 0 23px 0;
+				line-height : 1.5em;
+				width : 725px;
+				@include droid('italic');
+				@include text-shadow();
+			}
+
+			> img#child {
+				@include homepage_image('child');
+				height : 301px;
+				width : 298px;
+				position : absolute;
+				top : 1px;
+				right : 10px;
+			}
+			
+		}
+	}
+	
+	#homepage_contentC {
+		margin : 33px 0;
+
+		.icon {
+			float : left;
+			margin-right : 19px;
+
+			&.body {
+				@include homepage_image('body-icon');
+				width : 17px;
+				height : 17px;
+			}
+			&.folder {
+				@include homepage_image('folder-icon');
+				width : 22px;
+				height : 15px;
+			}
+			&.notepad {
+				@include homepage_image('notepad-icon');
+				width : 22px;
+				height : 22px;
+			}
+		}
+
+		h3 {
+			@include droid();
+			font-size : 1.45em;
+			margin-bottom : 20px;
+		}
+
+		img {
+			&.wwa_img {
+				height : 150px;
+				width : 293px;
+				border : solid 1px $primary-blue;
+				margin-bottom : 20px;
+			}
+
+			&.cp_img {
+				max-height : 150px;
+				max-width : 293px;
+				border : solid 1px $primary-blue;
+				margin-bottom : 20px;
+			}
+			
+			&#who_we_are {
+				@include homepage_image('who_we_are');
+			}
+		}
+
+		p {
+			font-weight : 500;
+			line-height : 2.2em;
+			padding-right : 13px;
+			margin-bottom : 1em;
+		}
+
+		ul {
+			li {
+				font-weight : 500;
+				line-height : 3em;
+			}
+		}
+	}
+}

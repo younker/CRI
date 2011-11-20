@@ -1,0 +1,44 @@
+
+
+dl {
+	margin-bottom : 3em;
+
+	dt {
+		float : left;
+		margin-right : 2em;
+		height : 175px !important;
+
+		img {
+	    float : left;
+			border : solid 1px $primary-blue;
+	    height : 152px;
+	    width : 152px;
+		}
+	}
+
+	&.team_member {
+		.contact_info {
+			// implement this later
+			display : none;
+		}
+	}
+
+	dd {
+		h3 {
+			@include page-title();
+
+			a {
+				font-family : helvetica;
+				font-size : .6em;
+				font-weight : 300;
+			}
+		}
+		h4 {
+			color : $blue-grey !important;
+		}
+		p {
+			text-align : justify;
+		}
+	}
+}
+

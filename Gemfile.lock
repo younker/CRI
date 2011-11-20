@@ -1,136 +1,165 @@
 GIT
-  remote: https://github.com/chriseppstein/compass.git
-  revision: 696d84562d63a3e799efa73a06ba9f24b8d5b73a
-  branch: rails31
+  remote: git@github.com:younker/team.git
+  revision: 90548df6ef8d2770881170c2cc9d4b0c6d038366
+  tag: v0.1
   specs:
-    compass (0.11.3.rails.0.696d845)
-      chunky_png (~> 1.1)
-      fssm (>= 0.2.7)
-      sass (~> 3.1)
+    team (0.0.1)
+      haml-rails
+      mysql2
+      rails (~> 3.1.1)
+
+PATH
+  remote: /websites/gems/Blog
+  specs:
+    blog (0.0.1)
+      haml-rails
+      jquery-rails
+      mysql2
+      paperclip
+      rails (= 3.1.1)
+      sass
+      will_paginate
+      younker-string-extensions (~> 0.0.2)
 
 GEM
   remote: http://rubygems.org/
   specs:
-    actionmailer (3.1.0.rc4)
-      actionpack (= 3.1.0.rc4)
+    actionmailer (3.1.1)
+      actionpack (= 3.1.1)
       mail (~> 2.3.0)
-    actionpack (3.1.0.rc4)
-      activemodel (= 3.1.0.rc4)
-      activesupport (= 3.1.0.rc4)
+    actionpack (3.1.1)
+      activemodel (= 3.1.1)
+      activesupport (= 3.1.1)
       builder (~> 3.0.0)
       erubis (~> 2.7.0)
       i18n (~> 0.6)
-      rack (~> 1.3.0)
-      rack-cache (~> 1.0.1)
-      rack-mount (~> 0.8.1)
-      rack-test (~> 0.6.0)
-      sprockets (~> 2.0.0.beta.10)
-      tzinfo (~> 0.3.27)
-    activemodel (3.1.0.rc4)
-      activesupport (= 3.1.0.rc4)
-      bcrypt-ruby (~> 2.1.4)
+      rack (~> 1.3.2)
+      rack-cache (~> 1.1)
+      rack-mount (~> 0.8.2)
+      rack-test (~> 0.6.1)
+      sprockets (~> 2.0.2)
+    activemodel (3.1.1)
+      activesupport (= 3.1.1)
       builder (~> 3.0.0)
       i18n (~> 0.6)
-    activerecord (3.1.0.rc4)
-      activemodel (= 3.1.0.rc4)
-      activesupport (= 3.1.0.rc4)
-      arel (~> 2.1.1)
-      tzinfo (~> 0.3.27)
-    activeresource (3.1.0.rc4)
-      activemodel (= 3.1.0.rc4)
-      activesupport (= 3.1.0.rc4)
-    activesupport (3.1.0.rc4)
+    activerecord (3.1.1)
+      activemodel (= 3.1.1)
+      activesupport (= 3.1.1)
+      arel (~> 2.2.1)
+      tzinfo (~> 0.3.29)
+    activeresource (3.1.1)
+      activemodel (= 3.1.1)
+      activesupport (= 3.1.1)
+    activesupport (3.1.1)
       multi_json (~> 1.0)
-    arel (2.1.1)
-    bcrypt-ruby (2.1.4)
+    arel (2.2.1)
+    bcrypt-ruby (3.0.1)
     builder (3.0.0)
-    chunky_png (1.2.0)
-    coffee-script (2.2.0)
-      coffee-script-source
-      execjs
-    coffee-script-source (1.1.1)
+    cancan (1.6.7)
+    chunky_png (1.2.5)
+    cocaine (0.2.0)
+    compass (0.11.5)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+    contact (0.0.11)
+      rails
     erubis (2.7.0)
-    execjs (1.2.0)
+    execjs (1.2.9)
       multi_json (~> 1.0)
     fssm (0.2.7)
-    haml (3.1.2)
+    haml (3.1.3)
     haml-rails (0.3.4)
       actionpack (~> 3.0)
       activesupport (~> 3.0)
       haml (~> 3.0)
       railties (~> 3.0)
-    hike (1.1.0)
+    hike (1.2.1)
     i18n (0.6.0)
-    jquery-rails (1.0.11)
+    jquery-rails (1.0.18)
       railties (~> 3.0)
       thor (~> 0.14)
-    kgio (2.4.2)
+    json (1.6.1)
     mail (2.3.0)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    mime-types (1.16)
+    mime-types (1.17.2)
     multi_json (1.0.3)
-    mysql2 (0.3.6)
-    polyglot (0.3.1)
-    rack (1.3.0)
-    rack-cache (1.0.2)
+    mysql2 (0.3.10)
+    paperclip (2.4.5)
+      activerecord (>= 2.3.0)
+      activesupport (>= 2.3.2)
+      cocaine (>= 0.0.2)
+      mime-types
+    polyglot (0.3.3)
+    rack (1.3.5)
+    rack-cache (1.1)
       rack (>= 0.4)
-    rack-mount (0.8.1)
+    rack-mount (0.8.3)
       rack (>= 1.0.0)
     rack-ssl (1.3.2)
       rack
-    rack-test (0.6.0)
+    rack-test (0.6.1)
       rack (>= 1.0)
-    rails (3.1.0.rc4)
-      actionmailer (= 3.1.0.rc4)
-      actionpack (= 3.1.0.rc4)
-      activerecord (= 3.1.0.rc4)
-      activeresource (= 3.1.0.rc4)
-      activesupport (= 3.1.0.rc4)
+    rails (3.1.1)
+      actionmailer (= 3.1.1)
+      actionpack (= 3.1.1)
+      activerecord (= 3.1.1)
+      activeresource (= 3.1.1)
+      activesupport (= 3.1.1)
       bundler (~> 1.0)
-      railties (= 3.1.0.rc4)
-    railties (3.1.0.rc4)
-      actionpack (= 3.1.0.rc4)
-      activesupport (= 3.1.0.rc4)
+      railties (= 3.1.1)
+    railties (3.1.1)
+      actionpack (= 3.1.1)
+      activesupport (= 3.1.1)
       rack-ssl (~> 1.3.2)
       rake (>= 0.8.7)
       rdoc (~> 3.4)
       thor (~> 0.14.6)
-    rake (0.9.2)
-    rdoc (3.6.1)
-    sass (3.1.3)
-    sass-rails (3.1.0.rc.2)
-      actionpack (~> 3.1.0.rc1)
-      railties (~> 3.1.0.rc1)
-      sass (>= 3.1.2)
-      sprockets (>= 2.0.0.beta.9)
-    sprockets (2.0.0.beta.10)
-      hike (~> 1.0)
+    rake (0.9.2.2)
+    rb-fsevent (0.4.3.1)
+    rdoc (3.11)
+      json (~> 1.4)
+    sass (3.1.10)
+    sass-rails (3.1.5)
+      actionpack (~> 3.1.0)
+      railties (~> 3.1.0)
+      sass (~> 3.1.10)
+      tilt (~> 1.3.2)
+    sprockets (2.0.3)
+      hike (~> 1.2)
       rack (~> 1.0)
-      tilt (!= 1.3.0, ~> 1.1)
+      tilt (~> 1.1, != 1.3.0)
     thor (0.14.6)
-    tilt (1.3.2)
-    treetop (1.4.9)
+    tilt (1.3.3)
+    treetop (1.4.10)
+      polyglot
       polyglot (>= 0.3.1)
-    tzinfo (0.3.28)
-    uglifier (0.5.4)
+    tzinfo (0.3.31)
+    uglifier (1.1.0)
       execjs (>= 0.3.0)
       multi_json (>= 1.0.2)
-    unicorn (3.7.0)
-      kgio (~> 2.3)
-      rack
+    will_paginate (3.0.2)
+    younker-string-extensions (0.0.2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  coffee-script
-  compass!
+  bcrypt-ruby
+  blog!
+  cancan
+  compass
+  contact (~> 0.0.11)
   haml-rails
   jquery-rails
   mysql2
-  rails (= 3.1.0.rc4)
-  sass-rails (~> 3.1.0.rc)
+  paperclip
+  rails (= 3.1.1)
+  rb-fsevent
+  sass-rails (~> 3.1.4)
+  team!
   uglifier
-  unicorn
+  will_paginate
+  younker-string-extensions (~> 0.0.2)

@@ -1,0 +1,12 @@
+- if @archive.length > 0
+  %nav
+    %header
+      %h3 Other Articles
+
+    %section
+      %ul
+        - @archive.each do |article|
+          %li
+            = image_tag 'transparent.gif', :class => :curve_arrow, :alt => '=>'
+            = link_to article.title, construct_blog_path(article, :show)
+

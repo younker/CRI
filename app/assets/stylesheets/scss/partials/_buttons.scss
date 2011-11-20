@@ -1,0 +1,107 @@
+@import 'compass/css3/border-radius';
+@import 'compass/css3/inline-block';
+@import 'compass/css3/box-sizing';
+@import 'compass/css3/gradient';
+
+//$light-grey : #f7f7f7;
+//$alert-base : #ce0202;
+//$orange-base : #FDDE8A;
+//$orange-topG : #FFECBF;
+//$orange-bottomG : #F5B317;
+
+@mixin set-colors-for-button($base-color, $color: 45%, $border: 35%, $border-shadow: 40%) {
+  color : darken($base-color, $color);
+  border-color : darken($base-color, $border) darken($base-color, $border-shadow) darken($base-color, $border-shadow) darken($base-color, $border);
+}
+
+button, input[type="submit"], input[type='button'], input.button, a.button {
+	@include border-radius;
+	letter-spacing : .03em;
+  @include set-colors-for-button($light-grey);
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  @include inline-block;
+  font-size: 100%;
+  font-weight: bold;
+  line-height: 133%;
+  padding : 4px 13px 4px 10px;
+	margin : 0px;
+  text-decoration: none;
+  position : relative;
+  @include box-sizing('content-box');
+  text-shadow : 0 1px 0 lighten($light-grey, 10%);
+	background-color : darken($light-grey, 5%);
+	@include background-image(linear-gradient(lighten($light-grey, 5%), darken($light-grey, 15%)));
+
+  &:hover {
+		background-color : darken($light-grey, 10%);
+		@include background-image(linear-gradient($light-grey, darken($light-grey, 20%)));
+    color : darken($light-grey, 60%);
+    border-color : darken($light-grey, 60%);
+  }
+
+  &:active {
+		background-color : darken($light-grey, 2%);
+		@include background-image(linear-gradient($light-grey, darken($light-grey, 10%)));
+    padding-top : 5px;
+    padding-bottom : 3px;
+  }
+
+//  &.orange {
+//    background-color : $orange-base;
+//		@include background-image(linear-gradient($orange-topG, $orange-bottomG));
+//    text-shadow : 0 1px 0 lighten($orange-base, 10%);
+//    @include set-colors-for-button($orange-base);
+//
+//    &:hover {
+//      background-color : lighten($orange-base, 10%) !important;
+//      color : #A25A06;
+//      border-color : #A25A06;
+//    }
+//    
+//    &:active {
+//      background-color : lighten($orange-base, 10%) !important;
+//    }
+//  }
+
+//  &.alert, &.destroy {
+//    text-shadow : 0 1px 0 lighten($alert-base, 10%);
+//  	color : $white;
+//  	border-color : darken($alert-base, 10%) darken($alert-base, 15%) darken($alert-base, 15%) darken($alert-base, 10%);
+//		background-image : none;
+//    background-color : $alert-base;
+//		@include background-image(linear-gradient(lighten($alert-base, 10%), $alert-base));
+//
+//    &:hover {
+//      color : $white;
+//      border-color : darken($alert-base, 5%);
+//    	background-color : darken($alert-base, 5%);
+//			@include background-image(linear-gradient(lighten($alert-base, 10%), darken($alert-base, 10%)));
+//    }
+//
+//    &:active {
+//      background-color : lighten($alert-base, 10%) !important;
+//    }
+//  }
+//
+//  img {
+//    border: none;
+//    padding: 0;
+//    vertical-align: middle !important;
+//  }
+}
+
+//input[type="submit"], input.button {
+//  padding  : 4px 10px 4px 7px;
+//}
+//
+//
+//a {
+//  &.delete {
+//    color: #883128;
+//  }
+//  &.add {
+//    color: #468139;
+//  }
+//}

@@ -24,4 +24,11 @@ Cri::Application.configure do
 
   # Do not compress assets
   config.assets.compress = false
+
+  # Expands the lines which load the assets
+  config.assets.debug = true
+
+  # http://stackoverflow.com/questions/6312448/how-to-disable-logging-of-asset-pipeline-sprockets-messages-in-rails-3-1
+  # config.assets.logger = nil
+
 end

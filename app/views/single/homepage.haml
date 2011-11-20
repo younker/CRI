@@ -1,0 +1,45 @@
+:ruby
+  header(:title, "Header Title Goes Here")
+  header(:keywords, "Keywords goes here")
+  header(:description, "Description goes here")
+
+  page_title("This is the page title")
+
+- header(:banner) do
+  %nav.banner
+    .container
+      = image_tag 'transparent.gif', :id => 'child', :alt => 'Donate now to help a child in need'
+
+      %header
+        By helping a child, we can stop the cycle of abuse and disease.
+      
+      = link_to 'Donate Now!', donate_path, :class => :button
+
+#homepage_contentC.clearfix
+  .span-9
+    .body.icon &nbsp;
+    %h3 Who We Are
+
+    = image_tag 'transparent.gif', :id => 'who_we_are', :alt => 'CRI: Who We Are', :class => :wwa_img
+
+    %p
+      CRI seeks to confront the HIV/AIDS pandemic’s attack on children, particularly those who have suffered from abuse:  sexual, physical, and systemic.
+
+    = link_to 'Read More', team_engine.team_path, :class => :button
+
+  .span-9
+    .folder.icon &nbsp;
+    %h3 Current Project
+
+    = image_tag @project.photo.photo(:large), :class => 'cp_img'
+
+    %p= @project.teaser
+
+    = link_to 'Read More', construct_blog_path(@project, :show, @project_context), :class => :button
+
+
+  .span-6.last
+    .notepad.icon &nbsp;
+    %h3 Latest News
+
+    %ul= render :partial => 'single/homepage/news', :collection => @news

@@ -1,5 +1,11 @@
+staging_backups
+config/keys.yml
+restart
+stop
 .bundle
-db/*.sqlite3
 log/*.log
-tmp/
+tmp/**/*
+*.todo
+WTF/*
 .sass-cache/
+app/assets/shared/team_members

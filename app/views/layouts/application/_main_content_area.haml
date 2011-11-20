@@ -1,0 +1,6 @@
+- if content_for?(:right_col)
+  #left_col.span-17= yield
+  #right_col.span-7.last= yield(:right_col)
+
+- else
+  = yield

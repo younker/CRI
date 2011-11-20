@@ -10,6 +10,67 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20111119011822) do
+
+  create_table "blog_blogs", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "context_id"
+    t.string   "title"
+    t.string   "title_for_url"
+    t.string   "teaser"
+    t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "blog_contexts", :force => true do |t|
+    t.string   "context_type"
+    t.string   "full_route"
+    t.string   "terse_route"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "blog_photos", :force => true do |t|
+    t.integer  "blog_id"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "team_members", :force => true do |t|
+    t.string   "name"
+    t.string   "position"
+    t.string   "email"
+    t.string   "cell_phone"
+    t.string   "office_phone"
+    t.string   "twitter"
+    t.string   "facebook"
+    t.text     "bio"
+    t.boolean  "active"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "team_photos", :force => true do |t|
+    t.integer  "member_id"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "email"
+    t.string   "password_digest"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "roles_mask"
+  end
 
 end

@@ -1,0 +1,25 @@
+:ruby
+  links = [
+    [:homepage, 'Take Action', main_app.root_path],
+    [:donate, 'Donate', main_app.donate_path],
+    [:news, 'News', main_app.news_seo_path],
+    [:about, 'About', team_engine.team_path],
+    [:projects, 'Projects', main_app.projects_seo_path],
+    [:resources, 'Resources', main_app.resources_path]
+  ]
+
+%ul{:class => for_section}
+  - links.each do |(section, name, path)|
+    - selected = section?(section)
+    %li{:class => ('selected' if selected)}
+      = link_to_unless selected, name, path
+
+
+  - if for_section == :footer
+    - if controller.logged_in?
+      - edit_user = main_app.edit_user_path(controller.current_user)
+      %li= link_to_unless current_page?(edit_user), controller.current_user.email, edit_user
+      %li= link_to 'Log Out', main_app.logout_path
+    - else
+      %li= link_to 'Sign Up', main_app.sign_up_path
+      %li= link_to 'Log In', main_app.login_path

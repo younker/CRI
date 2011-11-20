@@ -1,0 +1,13 @@
+%article{:id => "blog-#{blog.id}"}
+  - if blog.photo.present?
+    = image_tag blog.photo.photo(:small)
+
+  %header
+    %h2=link_to blog.title, construct_blog_path(blog, :show)
+    %strong= posted_by_on(blog)
+
+  %p
+    = blog.teaser
+
+  %footer
+    =link_to 'read more', construct_blog_path(blog, :show), :class => :button
