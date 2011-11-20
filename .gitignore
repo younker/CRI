@@ -9,3 +9,7 @@ tmp/**/*
 WTF/*
 .sass-cache/
 app/assets/shared/team_members
+app/assets/images/blog
+app/assets/images/sprites/homepage-*.png
+app/assets/images/sprites/layout-*.png
+app/assets/images/sprites/sprite-*.png
