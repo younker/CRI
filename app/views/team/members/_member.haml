@@ -4,9 +4,6 @@
   %dd
     %h3
       = member.name
-      - if can?(:edit, Team::Member)
-        = link_to 'Edit', edit_member_path(member), :class => :edit
-
 
     %h4= member.position
 
@@ -21,7 +18,11 @@
       - if controller.action_name == 'show'
         = sanitize member.bio, :tags => allowable_html, :attributes => %w(href)
       - else
-        = sanitize member.bio.truncate(325), :tags => allowable_html, :attributes => %w(href)
-        = link_to "more.", team_engine.member_path(member)
+        = sanitize member.bio.truncate(225), :tags => allowable_html, :attributes => %w(href)
 
+    - unless controller.action_name == 'show'
+      = link_to "Read More", team_engine.member_path(member), :class => :button
+
+    - if can?(:edit, Team::Member)
+      = link_to 'Edit Profile', edit_member_path(member), :class => :button
 

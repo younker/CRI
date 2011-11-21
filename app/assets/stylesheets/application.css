@@ -478,46 +478,65 @@ button:active, input[type="submit"]:active, input[type='button']:active, input.b
   padding-bottom: 3px;
 }
 
-/* line 3, scss/partials/_standard_dl_layout.scss */
+/* line 2, scss/partials/_standard_dl_layout.scss */
 dl {
   margin-bottom: 3em;
 }
-/* line 6, scss/partials/_standard_dl_layout.scss */
+/* line 5, scss/partials/_standard_dl_layout.scss */
 dl dt {
   float: left;
   margin-right: 2em;
   height: 175px !important;
 }
-/* line 11, scss/partials/_standard_dl_layout.scss */
+/* line 10, scss/partials/_standard_dl_layout.scss */
 dl dt img {
   float: left;
   border: solid 1px #103d63;
   height: 152px;
   width: 152px;
 }
-/* line 20, scss/partials/_standard_dl_layout.scss */
+/* line 19, scss/partials/_standard_dl_layout.scss */
 dl.team_member .contact_info {
   display: none;
 }
-/* line 27, scss/partials/_standard_dl_layout.scss */
+/* line 26, scss/partials/_standard_dl_layout.scss */
 dl dd h3 {
   font-size: 1.4em !important;
   font-weight: 600 !important;
   margin: 0 0 0.5em !important;
 }
-/* line 30, scss/partials/_standard_dl_layout.scss */
+/* line 29, scss/partials/_standard_dl_layout.scss */
 dl dd h3 a {
+  font-size: 1.4em !important;
+  font-weight: 600 !important;
+  margin: 0 0 0.5em !important;
+}
+/* line 33, scss/partials/_standard_dl_layout.scss */
+dl dd h3 a.edit {
   font-family: helvetica;
   font-size: .6em;
   font-weight: 300;
 }
-/* line 36, scss/partials/_standard_dl_layout.scss */
+/* line 40, scss/partials/_standard_dl_layout.scss */
 dl dd h4 {
   color: #4e5c67 !important;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 0 0 0.5em;
 }
-/* line 39, scss/partials/_standard_dl_layout.scss */
-dl dd p {
-  text-align: justify;
+
+/* line 3, scss/partials/_blog_show.scss */
+#blog_show header h1 {
+  font-size: 1.4em !important;
+  font-weight: 600 !important;
+  margin: 0 0 0.5em !important;
+}
+/* line 4, scss/partials/_blog_show.scss */
+#blog_show header h4 {
+  color: #4e5c67 !important;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 0 0 0.5em;
 }
 
 /* line 3, scss/partials/_contact_form.scss */
@@ -580,62 +599,72 @@ dl dd p {
   margin-bottom: 3em;
 }
 
-/* line 15, scss/application.scss */
+/* line 16, scss/application.scss */
 body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   letter-spacing: .08em;
   font-size: 12px;
+  line-height: 1.5em;
 }
 
-/* line 22, scss/application.scss */
+/* line 24, scss/application.scss */
 body * {
   background-color: transparent;
 }
 
-/* line 26, scss/application.scss */
+/* line 28, scss/application.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #103d63 !important;
 }
 
-/* line 30, scss/application.scss */
+/* line 32, scss/application.scss */
 h1 {
   font-size: 1.4em !important;
   font-weight: 600 !important;
   margin: 0 0 0.5em !important;
 }
 
-/* line 34, scss/application.scss */
+/* line 36, scss/application.scss */
 p {
   margin: 1em 0;
   line-height: 1.6em;
 }
+/* line 40, scss/application.scss */
+p a {
+  font-weight: 500;
+  text-decoration: underline !important;
+}
+/* line 44, scss/application.scss */
+p a:hover {
+  text-decoration: none !important;
+}
 
-/* line 39, scss/application.scss */
+/* line 50, scss/application.scss */
 a {
   text-decoration: none !important;
   color: #103d63 !important;
 }
-/* line 43, scss/application.scss */
+/* line 54, scss/application.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 50, scss/application.scss */
+/* line 61, scss/application.scss */
 #right_col h3 {
   font-family: 'DroidSerifRegular', Georgia, serif;
   color: #4e5c67;
   font-size: 1.4em;
-  margin: 0 0 1em 1.3em;
+  margin: 0 0 1em 16px;
 }
-/* line 58, scss/application.scss */
+/* line 69, scss/application.scss */
 #right_col ul li {
   line-height: 2.5em;
-  padding-left: 1em;
+  padding-left: 30px;
   padding-right: 2em;
   font-family: 'DroidSerifBoldItalic', Georgia, serif;
 }
-/* line 64, scss/application.scss */
+/* line 75, scss/application.scss */
 #right_col ul li.selected {
   font-family: 'DroidSerifItalic', Georgia, serif;
   display: -moz-inline-box;
@@ -651,15 +680,26 @@ a:hover {
   border-radius: 5px;
   background-color: #103d63;
   color: #f0f0f0;
+  margin-left: 5px;
+  padding-left: 10px;
 }
 /* line 7, ../../../../../Users/younker/.rvm/gems/ruby-1.8.7-p352/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
 #right_col ul li.selected {
   *display: inline;
 }
-/* line 72, scss/application.scss */
+/* line 85, scss/application.scss */
 #right_col ul li a:hover {
   color: #4e5c67 !important;
   text-decoration: underline !important;
+}
+/* line 90, scss/application.scss */
+#right_col ul li img.curve_arrow {
+  margin-left: -14px;
+}
+
+/* line 98, scss/application.scss */
+div.pagination {
+  text-align: center;
 }
 
 /* line 11, scss/partials/_homepage.scss */

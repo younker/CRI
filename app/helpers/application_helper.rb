@@ -36,10 +36,14 @@ module ApplicationHelper
     case section
     when :homepage
       current_page?(main_app.root_path)
+    when :donate
+      controller_action?(:single, [:donate, :why_give])
     when :about
       controller_action?(:members, :index) ||  # team engine
       controller_action?(:contacts, :new) ||   # contact engine
       controller_action?(:single, [:mission_statement, :faq, :privacy_policy])
+    when :news, :projects
+      controller_action?(:blogs, [:index, :show]) && @context.context_type.downcase.eql?(section.to_s)
     end
   end
 

@@ -1,1 +1,17 @@
-donate
+:ruby
+  header(:right_col, render(:partial => 'shared/donate/in_this_section'))
+  header(:breadcrumb, breadcrumb('Donate'))
+
+
+%h1 Making a Donation to CRI
+
+%p
+  = "Currently we are in the process of building a tool to allow you to donate to Child Refuge International online. If you would like to donate now, please #{link_to 'Contact Us', contact_path} or send a check to:".html_safe
+  
+%p.prepend-1
+  Child Refuge International
+  %br
+  5808 Scenic Ridge Loop
+  %br
+  Yakima WA, 98908
+

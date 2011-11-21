@@ -5,7 +5,7 @@
     [:news, 'News', main_app.news_seo_path],
     [:about, 'About', team_engine.team_path],
     [:projects, 'Projects', main_app.projects_seo_path],
-    [:resources, 'Resources', main_app.resources_path]
+    #[:resources, 'Resources', main_app.resources_path]
   ]
 
 %ul{:class => for_section}
@@ -16,6 +16,8 @@
 
 
   - if for_section == :footer
+    %li= link_to_unless current_page?(contact_path), 'Contact Us', contact_path
+
     - if controller.logged_in?
       - edit_user = main_app.edit_user_path(controller.current_user)
       %li= link_to_unless current_page?(edit_user), controller.current_user.email, edit_user

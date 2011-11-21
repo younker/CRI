@@ -26,31 +26,19 @@ class Ability
   def initialize(user)
     user ||= User.new # guest user
 
-
-
-
-    #------------------------ hack
-    can :manage, :all
-    #------------------------ hack
-
-
-
-
     # Everybody can read blogs and view board (team) members
     can :read, Blog
     can :read, Team::Member
 
-    
     # anybody can manage the object if it is theirs
     can :manage, User, :id => user.id
-    can :manage, Team::Member, :id => user.id
     
     if user.admin?
       can :manage, :all
     else
       if user.moderator?
         can :manage, Blog
-        # can :manage, Member
+        can :manage, Team::Member
       end
     
       if user.author?

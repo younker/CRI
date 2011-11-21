@@ -1,0 +1,26 @@
+:ruby
+  header(:right_col, render(:partial => 'blog/blogs/show/other_blogs'))
+  path = construct_blog_path(@blog, :show)
+
+
+%section{:id => 'blog_show'}
+  %header
+    %h1= @blog.title
+    %h4= posted_by_on(@blog)
+
+  - if @blog.photo.present?
+    = image_tag @blog.photo.photo(:large)
+
+  %p= sanitize @blog.content, :tags => allowable_html, :attributes => %w(href)
+
+%p
+  = link_to "Back to All #{@blog.context.context_type.humanize} Stories", construct_blog_path(@blog, :index), :class => :button
+
+  - if can?(:edit, @blog)
+    = link_to 'Edit', construct_blog_path(@blog, :edit), :class => :button
+
+  - if can?(:destroy, @blog)
+    = link_to 'Destroy', construct_blog_path(@blog, :delete), :confirm => 'Are you sure?', :method => :delete, :class => :button
+
+
+

@@ -8,6 +8,7 @@
 @import "partials/growl";
 @import "partials/buttons";
 @import "partials/standard_dl_layout";
+@import "partials/blog_show";
 @import "partials/contact_form";
 @import "partials/faq";
 
@@ -17,6 +18,7 @@ body {
  	font-weight: 300;
 	letter-spacing : .08em;
 	font-size : 12px;
+	line-height : 1.5em;
 }
 
 body * {
@@ -34,6 +36,15 @@ h1 {
 p {
 	margin : 1em 0;
 	line-height : 1.6em;
+
+	a {
+		font-weight : 500;
+		text-decoration : underline !important;
+
+		&:hover {
+			text-decoration : none !important;
+		}
+	}
 }
 
 a {
@@ -51,13 +62,13 @@ a {
 		@include droid();
 		color : $blue-grey;
 		font-size : 1.4em;
-		margin : 0 0 1em 1.3em;
+		margin : 0 0 1em 16px;
 	}
 	
 	ul {
 		li {
 			line-height : 2.5em;
-			padding-left : 1em;
+			padding-left : 30px;
 			padding-right : 2em;
 			@include droid('bolditalic');
 
@@ -67,15 +78,25 @@ a {
 				@include border-radius();
 				background-color : $primary-blue;
 				color : $white;
+				margin-left : 5px;
+				padding-left : 10px;
 			}
 
 			a:hover {
 				color : $blue-grey !important;
 				text-decoration : underline !important;
 			}
+
+			img.curve_arrow {
+				margin-left : -14px;
+			}
 			
 		}
 	}
+}
+
+div.pagination {
+	text-align : center;
 }
 
 @import "partials/homepage";

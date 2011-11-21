@@ -10,11 +10,12 @@ class SingleController < ApplicationController
   end
 
   def donate
-    
+  end
+
+  def why_give
   end
   
   def resources
-    
   end
 
   def privacy_policy

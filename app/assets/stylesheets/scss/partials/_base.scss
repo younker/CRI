@@ -20,6 +20,13 @@ $default-text-shadow-h-offset: 1px;
   margin : 0 0 0.5em !important;
 }
 
+@mixin sub-title() {
+	color : $blue-grey !important;
+	font-size: 1.2em;
+	font-weight: 500;
+	margin: 0 0 0.5em;
+}
+
 
 
 // Blueprint Specific -----------------

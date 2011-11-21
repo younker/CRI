@@ -8,11 +8,11 @@ Cri::Application.routes.draw do
 
   root :to => 'single#homepage'
   match '/donate', :as => :donate, :to => 'single#donate'
-  match '/resources', :as => :resources, :to => 'single#resources'
+  match '/why-give', :as => :why_give, :to => 'single#why_give'
   match '/mission-statement', :as => :mission_statement, :to => 'single#mission_statement'
   match '/frequently-asked-questions', :as => :faq, :to => 'single#faq'
   match '/privacy-policy', :as => :privacy_policy, :to => 'single#privacy_policy'
-
+  # match '/resources', :as => :resources, :to => 'single#resources'
 
   # # TODO -- younker [2011-11-19 02:35]
   # Fix the fact we now need 'resources' for all user actions, not just sign up

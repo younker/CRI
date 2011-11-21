@@ -1,13 +1,19 @@
-%article{:id => "blog-#{blog.id}"}
-  - if blog.photo.present?
-    = image_tag blog.photo.photo(:small)
 
-  %header
-    %h2=link_to blog.title, construct_blog_path(blog, :show)
-    %strong= posted_by_on(blog)
+%dl.clearfix
+  %dt
+    = image_tag blog.photo.photo(:medium)
+  %dd
+    %h3
+      = link_to blog.title, construct_blog_path(blog, :show)
 
-  %p
-    = blog.teaser
+    %h4= posted_by_on(blog)
 
-  %footer
-    =link_to 'read more', construct_blog_path(blog, :show), :class => :button
+    %p
+      = sanitize blog.teaser.truncate(325), :tags => allowable_html, :attributes => %w(href)
+
+    = link_to 'Read more', construct_blog_path(blog, :show), :class => :button
+
+    - if can?(:edit, Blog)
+      = link_to 'Edit Project Blog', construct_blog_path(blog, :edit), :class => :button
+
+

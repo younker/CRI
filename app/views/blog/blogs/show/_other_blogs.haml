@@ -1,0 +1,10 @@
+%nav
+  %header
+    %h3= "Other #{@context.context_type.humanize} Stories"
+
+  %section
+    %ul
+      - @other_blogs.each do |b|
+        %li
+          = image_tag 'transparent.gif', :class => :curve_arrow, :alt => '=>'
+          = link_to b.title, construct_blog_path(b, :show)

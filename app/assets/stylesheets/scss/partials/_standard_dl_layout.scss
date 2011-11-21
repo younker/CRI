@@ -1,5 +1,4 @@
 
-
 dl {
 	margin-bottom : 3em;
 
@@ -28,17 +27,16 @@ dl {
 			@include page-title();
 
 			a {
+				@include page-title();
+			}
+
+			a.edit {
 				font-family : helvetica;
 				font-size : .6em;
 				font-weight : 300;
 			}
 		}
-		h4 {
-			color : $blue-grey !important;
-		}
-		p {
-			text-align : justify;
-		}
+
+		h4 { @include sub-title(); }
 	}
 }
-
