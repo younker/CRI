@@ -53,6 +53,8 @@ Cri::Application.configure do
   config.assets.js_compressor  = :uglifier
 
   config.assets.compile = true
+  config.assets.debug = true
+
 
   # Generate digests for assets URLs
   config.assets.digest = true
