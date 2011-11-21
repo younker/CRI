@@ -27,3 +27,5 @@ gem 'compass'
 gem 'sass-rails', "~> 3.1.4"
 gem 'rb-fsevent'
 gem 'uglifier'
+gem 'execjs'
+gem 'therubyracer'
