@@ -7,7 +7,8 @@
 $layout_images : sprite-map("sprites/layout/*.png");
 
 @mixin layout_image($image_name) {
-  background : sprite($layout_images, $image_name) no-repeat !important;
+//  background : sprite($layout_images, $image_name) no-repeat !important;
+	background : url(/assets/sprites/layout/#{$image_name}.png) no-repeat scroll 0 0 transparent !important;
 }
 
 
