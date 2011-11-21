@@ -52,10 +52,11 @@ Cri::Application.configure do
   # Specify the default JavaScript compressor
   config.assets.js_compressor  = :uglifier
 
-  # config.assets.compile = true
-  config.assets.debug = true
+  config.assets.compile = true
 
   # Generate digests for assets URLs
   config.assets.digest = true
+
+  config.assets.debug = true
 
 end
