@@ -55,8 +55,7 @@ Cri::Application.configure do
   # config.assets.compile = true
   # config.assets.debug = true
 
-
   # Generate digests for assets URLs
-  # config.assets.digest = true
+  config.assets.digest = true
 
 end
