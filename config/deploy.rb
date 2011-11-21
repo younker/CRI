@@ -93,11 +93,11 @@ namespace :deploy do
   end
   after "deploy:symlink", "deploy:bundle_install"
 
-  # desc "compile assets"
-  # task :compile_assets, :roles => :app do
-  #   run "cd #{deploy_to}/current/ && /home/cri/webapps/#{app_name}/bin/bundle exec compass compile -e production --force"
-  # end
-  # after "deploy:bundle_install", "deploy:compile_assets"
+  desc "compile assets"
+  task :compile_assets, :roles => :app do
+    run "cd #{deploy_to}/current/ && /home/cri/webapps/#{app_name}/bin/bundle exec compass compile -e production --force"
+  end
+  after "deploy:bundle_install", "deploy:compile_assets"
 end
 
 
