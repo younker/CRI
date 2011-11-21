@@ -17,10 +17,8 @@ gem 'cancan'
 
 gem "younker-string-extensions", "~> 0.0.2"
 gem "contact", "~> 0.0.11"
-# gem "blog", :git => 'git@github.com:younker/Blog.git', :tag => 'v1.0'
-gem "blog", :path => '/websites/gems/Blog'
+gem "blog", :git => 'git@github.com:younker/Blog.git', :tag => 'v1.0'
 gem "team", :git => 'git@github.com:younker/team.git', :tag => 'v0.1'
-# gem "team", :path => '/websites/gems/team'
 
 # Deploy with Capistrano
 # gem 'capistrano'
