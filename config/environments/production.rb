@@ -47,16 +47,18 @@ Cri::Application.configure do
   config.serve_static_assets = false
 
   # Compress JavaScripts and CSS
-  config.assets.compress = true
+  # config.assets.compress = true
+  config.assets.compress = false
+
 
   # Specify the default JavaScript compressor
-  config.assets.js_compressor  = :uglifier
+  # config.assets.js_compressor  = :uglifier
 
-  config.assets.compile = true
-  config.assets.debug = true
+  # config.assets.compile = true
+  # config.assets.debug = true
 
 
   # Generate digests for assets URLs
-  config.assets.digest = true
+  # config.assets.digest = true
 
 end
