@@ -90,6 +90,7 @@ namespace :deploy do
   desc "bundle install the necessary prerequisites"
   task :bundle_install, :roles => :app do
     run "cd #{deploy_to}/current/ && /home/cri/webapps/#{app_name}/bin/bundle install"
+    run "cd #{deploy_to}/current/ && /home/cri/webapps/#{app_name}/bin/bundle exec compass compile -e production --force"
   end
   after "deploy:symlink", "deploy:bundle_install"
 end
