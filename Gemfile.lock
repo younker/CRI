@@ -1,15 +1,7 @@
 GIT
-  remote: git@github.com:younker/team.git
-  revision: 90548df6ef8d2770881170c2cc9d4b0c6d038366
-  tag: v0.1
-  specs:
-    team (0.0.1)
-      haml-rails
-      mysql2
-      rails (~> 3.1.1)
-
-PATH
-  remote: /websites/gems/Blog
+  remote: git@github.com:younker/Blog.git
+  revision: 3539f376584851d120abdead141472942ae160db
+  tag: v1.0
   specs:
     blog (0.0.1)
       haml-rails
@@ -20,6 +12,16 @@ PATH
       sass
       will_paginate
       younker-string-extensions (~> 0.0.2)
+
+GIT
+  remote: git@github.com:younker/team.git
+  revision: 90548df6ef8d2770881170c2cc9d4b0c6d038366
+  tag: v0.1
+  specs:
+    team (0.0.1)
+      haml-rails
+      mysql2
+      rails (~> 3.1.1)
 
 GEM
   remote: http://rubygems.org/
@@ -56,6 +58,12 @@ GEM
     bcrypt-ruby (3.0.1)
     builder (3.0.0)
     cancan (1.6.7)
+    capistrano (2.9.0)
+      highline
+      net-scp (>= 1.0.0)
+      net-sftp (>= 2.0.0)
+      net-ssh (>= 2.0.14)
+      net-ssh-gateway (>= 1.1.0)
     chunky_png (1.2.5)
     cocaine (0.2.0)
     compass (0.11.5)
@@ -74,6 +82,7 @@ GEM
       activesupport (~> 3.0)
       haml (~> 3.0)
       railties (~> 3.0)
+    highline (1.6.8)
     hike (1.2.1)
     i18n (0.6.0)
     jquery-rails (1.0.18)
@@ -87,6 +96,13 @@ GEM
     mime-types (1.17.2)
     multi_json (1.0.3)
     mysql2 (0.3.10)
+    net-scp (1.0.4)
+      net-ssh (>= 1.99.1)
+    net-sftp (2.0.5)
+      net-ssh (>= 2.0.9)
+    net-ssh (2.2.1)
+    net-ssh-gateway (1.1.0)
+      net-ssh (>= 1.99.1)
     paperclip (2.4.5)
       activerecord (>= 2.3.0)
       activesupport (>= 2.3.2)
@@ -150,6 +166,7 @@ DEPENDENCIES
   bcrypt-ruby
   blog!
   cancan
+  capistrano
   compass
   contact (~> 0.0.11)
   haml-rails

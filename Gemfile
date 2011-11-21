@@ -21,13 +21,9 @@ gem "blog", :git => 'git@github.com:younker/Blog.git', :tag => 'v1.0'
 gem "team", :git => 'git@github.com:younker/team.git', :tag => 'v0.1'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
 
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'compass'
-  gem 'sass-rails', "~> 3.1.4"
-  gem 'rb-fsevent'
-  gem 'uglifier'
-end
+gem 'compass'
+gem 'sass-rails', "~> 3.1.4"
+gem 'rb-fsevent'
+gem 'uglifier'

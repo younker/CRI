@@ -11,18 +11,3 @@ development:
   interceptor:
     intercept: true
     intercept_recipient: 'intercepted@28dev.com'
-
-production:
-  host: childrefugeinternational.org
-  default_recipients: 'contact@childrefugeinternational.org'
-  smtp:
-    address: 'smtp.webfaction.com'
-    port: '25'
-    domain: 'webfaction.com'
-    authentication: 'login'
-    username: 'cri'
-    password: 'd0244bf9'
-  interceptor:
-    intercept: false
-    intercept_recipient: 'contact@childrefugeinternational.org'
-

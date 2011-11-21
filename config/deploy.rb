@@ -1,10 +1,3 @@
-default_run_options[:pty] = true
-ssh_options[:forward_agent] = true
-
-# Setup (taken mostly from http://forum.webfaction.com/viewtopic.php?id=4906)
-# cap deploy:setup
-# cap deploy:check
-
 # New Repo Steps:
 #   gem install capistrano
 #   capify .
@@ -12,7 +5,17 @@ ssh_options[:forward_agent] = true
 #   cap deploy:check
 # Note: you may have to remove the following for the first cap deploy
 #   after "deploy:symlink", "deploy:bundle_install"
+# * You will also need to make sure git is installed -- http://docs.webfaction.com/software/git.html
+# * Don't forget to setup paths once that is done:
+#   cd ~/webapps/rails
+#   export GEM_HOME=$PWD/gems
+#   export PATH=$PWD/bin:$PATH
+#   export RUBYLIB=$PWD/lib:$RUBYLIB
+# 
+# Setup (taken mostly from http://forum.webfaction.com/viewtopic.php?id=4906)
 
+default_run_options[:pty] = true
+ssh_options[:forward_agent] = true
 
 set :app_name, "cri"
 set :webfaction_username, "cri"
@@ -54,7 +57,6 @@ namespace :deploy do
     run "ln -nfs #{release_path} #{deploy_to}/current"
     run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
     run "ln -nfs #{shared_path}/config/contact.yml #{release_path}/config/contact.yml"
-    run "ln -nfs #{shared_path}/config/ecommerce.yml #{release_path}/config/ecommerce.yml"
     run "ln -nfs #{shared_path}/assets #{release_path}/public/"
     run "ln -nfs #{shared_path}/certs #{release_path}"
   end
@@ -89,7 +91,7 @@ namespace :deploy do
   task :bundle_install, :roles => :app do
     run "cd #{deploy_to}/current/ && /home/cri/webapps/#{app_name}/bin/bundle install"
   end
-  # after "deploy:symlink", "deploy:bundle_install"
+  after "deploy:symlink", "deploy:bundle_install"
 end
 
 

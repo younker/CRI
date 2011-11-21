@@ -31,11 +31,14 @@
     .folder.icon &nbsp;
     %h3 Current Project
 
-    = image_tag @project.photo.photo(:large), :class => 'cp_img'
+    - if @project
+      = image_tag @project.photo.photo(:large), :class => 'cp_img'
 
-    %p= @project.teaser
+      %p= @project.teaser
 
-    = link_to 'Read More', construct_blog_path(@project, :show, @project_context), :class => :button
+      = link_to 'Read More', construct_blog_path(@project, :show, @project_context), :class => :button
+    - else
+      Sorry, but not projects currently exist.
 
 
   .span-6.last
