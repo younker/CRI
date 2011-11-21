@@ -95,7 +95,7 @@ section#breadcrumbC {
 	font-size : 1.5em;
 	text-transform : uppercase;
 	@include droid();
-	@include text-shadow(darken($primary-blue, 20%), 2px, 2px, 1px);
+	@include text-shadow(darken($primary-blue, 20%), '2px 2px 1px');
 }
 
 section#contentC {

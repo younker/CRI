@@ -1,4 +1,4 @@
-/* line 17, ../../../../../Users/younker/.rvm/gems/ruby-1.8.7-p352/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, /Users/younker/.rvm/gems/ruby-1.8.7-p352/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../../Users/younker/.rvm/gems/ruby-1.8.7-p352/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 20, /Users/younker/.rvm/gems/ruby-1.8.7-p352/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
 }
 
-/* line 22, ../../../../../Users/younker/.rvm/gems/ruby-1.8.7-p352/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, /Users/younker/.rvm/gems/ruby-1.8.7-p352/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, ../../../../../Users/younker/.rvm/gems/ruby-1.8.7-p352/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, /Users/younker/.rvm/gems/ruby-1.8.7-p352/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, ../../../../../Users/younker/.rvm/gems/ruby-1.8.7-p352/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, /Users/younker/.rvm/gems/ruby-1.8.7-p352/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, ../../../../../Users/younker/.rvm/gems/ruby-1.8.7-p352/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, /Users/younker/.rvm/gems/ruby-1.8.7-p352/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, ../../../../../Users/younker/.rvm/gems/ruby-1.8.7-p352/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, /Users/younker/.rvm/gems/ruby-1.8.7-p352/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, ../../../../../Users/younker/.rvm/gems/ruby-1.8.7-p352/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, /Users/younker/.rvm/gems/ruby-1.8.7-p352/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 114, ../../../../../Users/younker/.rvm/gems/ruby-1.8.7-p352/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 114, /Users/younker/.rvm/gems/ruby-1.8.7-p352/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -95,22 +95,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-style: normal;
 }
 
-/* line 14, scss/partials/_layout.scss */
+/* line 14, /websites/cri/app/assets/stylesheets/scss/partials/_layout.scss */
 body {
   background-color: black;
 }
-/* line 17, scss/partials/_layout.scss */
+/* line 17, /websites/cri/app/assets/stylesheets/scss/partials/_layout.scss */
 body > header {
   height: 240px;
   background: url(/assets/static/layout/header-bg.jpg) 0 0 repeat #9f9f9f;
   border-top: solid 5px #103d63 !important;
 }
-/* line 22, scss/partials/_layout.scss */
+/* line 22, /websites/cri/app/assets/stylesheets/scss/partials/_layout.scss */
 body > header .container {
   height: 100%;
   position: relative;
 }
-/* line 26, scss/partials/_layout.scss */
+/* line 26, /websites/cri/app/assets/stylesheets/scss/partials/_layout.scss */
 body > header .container img#cri_logo {
   background: url('/assets/sprites/layout-s6fde65c191.png') 0 -20px no-repeat !important;
   height: 167px;
@@ -119,33 +119,33 @@ body > header .container img#cri_logo {
   top: 36px;
   left: 0px;
 }
-/* line 35, scss/partials/_layout.scss */
+/* line 35, /websites/cri/app/assets/stylesheets/scss/partials/_layout.scss */
 body > header .container > ul {
   position: absolute;
   top: 133px;
   left: 328px;
 }
-/* line 40, scss/partials/_layout.scss */
+/* line 40, /websites/cri/app/assets/stylesheets/scss/partials/_layout.scss */
 body > header .container > ul li {
   margin-right: 3em;
 }
-/* line 48, scss/partials/_layout.scss */
+/* line 48, /websites/cri/app/assets/stylesheets/scss/partials/_layout.scss */
 body > footer {
   color: #d6d6d6;
   background-color: black;
   text-align: center;
 }
-/* line 53, scss/partials/_layout.scss */
+/* line 53, /websites/cri/app/assets/stylesheets/scss/partials/_layout.scss */
 body > footer a {
   margin: 0 .5em;
   color: #f0f0f0 !important;
   text-decoration: none;
 }
-/* line 59, scss/partials/_layout.scss */
+/* line 59, /websites/cri/app/assets/stylesheets/scss/partials/_layout.scss */
 body > footer p {
   margin-bottom: 2em;
 }
-/* line 64, scss/partials/_layout.scss */
+/* line 64, /websites/cri/app/assets/stylesheets/scss/partials/_layout.scss */
 body > footer#top {
   text-align: left;
   height: 210px;
@@ -157,11 +157,11 @@ body > footer#top {
   background-image: linear-gradient(#092237, #103d63);
   border-bottom: solid 5px #4e5c67;
 }
-/* line 71, scss/partials/_layout.scss */
+/* line 71, /websites/cri/app/assets/stylesheets/scss/partials/_layout.scss */
 body > footer#bottom {
   font-size: .9em;
 }
-/* line 73, scss/partials/_layout.scss */
+/* line 73, /websites/cri/app/assets/stylesheets/scss/partials/_layout.scss */
 body > footer#bottom ul {
   margin: .5em auto;
   line-height: 2em;
@@ -171,18 +171,18 @@ body > footer#bottom ul {
   vertical-align: middle;
   *vertical-align: auto;
 }
-/* line 7, ../../../../../Users/younker/.rvm/gems/ruby-1.8.7-p352/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+/* line 7, /Users/younker/.rvm/gems/ruby-1.8.7-p352/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
 body > footer#bottom ul {
   *display: inline;
 }
 
-/* line 82, scss/partials/_layout.scss */
+/* line 82, /websites/cri/app/assets/stylesheets/scss/partials/_layout.scss */
 nav.banner {
   height: 302px;
   background: url(/assets/static/layout/paisley-bg.jpg) 0 0 repeat #9f9f9f;
 }
 
-/* line 89, scss/partials/_layout.scss */
+/* line 89, /websites/cri/app/assets/stylesheets/scss/partials/_layout.scss */
 section#breadcrumbC {
   min-height: 30px;
   background-color: #103d63;
@@ -192,16 +192,16 @@ section#breadcrumbC {
   font-size: 1.5em;
   text-transform: uppercase;
   font-family: 'DroidSerifRegular', Georgia, serif;
-  text-shadow: #02070b 2px 2px 1px;
+  text-shadow: #02070b, "2px 2px 1px";
 }
 
-/* line 101, scss/partials/_layout.scss */
+/* line 101, /websites/cri/app/assets/stylesheets/scss/partials/_layout.scss */
 section#contentC {
   background-color: #f0f0f0;
   padding: 2em 0;
 }
 
-/* line 107, scss/partials/_layout.scss */
+/* line 107, /websites/cri/app/assets/stylesheets/scss/partials/_layout.scss */
 body > header ul, footer ul {
   list-style-type: none;
   margin: 0;
@@ -209,50 +209,50 @@ body > header ul, footer ul {
   text-transform: uppercase;
   font-family: 'DroidSerifRegular', Georgia, serif;
 }
-/* line 114, scss/partials/_layout.scss */
+/* line 114, /websites/cri/app/assets/stylesheets/scss/partials/_layout.scss */
 body > header ul li, footer ul li {
   float: left;
   margin-right: .5em;
 }
-/* line 118, scss/partials/_layout.scss */
+/* line 118, /websites/cri/app/assets/stylesheets/scss/partials/_layout.scss */
 body > header ul li.last, footer ul li.last {
   margin-right: 0;
 }
-/* line 124, scss/partials/_layout.scss */
+/* line 124, /websites/cri/app/assets/stylesheets/scss/partials/_layout.scss */
 body > header ul.header li.selected, footer ul.header li.selected {
   border-bottom: solid 4px #103d63;
   padding-bottom: 4px;
 }
 
-/* line 133, scss/partials/_layout.scss */
+/* line 133, /websites/cri/app/assets/stylesheets/scss/partials/_layout.scss */
 img.curve_arrow, img.curve_arrow_white {
   height: 9px;
   width: 9px;
   vertical-align: baseline;
 }
 
-/* line 138, scss/partials/_layout.scss */
+/* line 138, /websites/cri/app/assets/stylesheets/scss/partials/_layout.scss */
 img.curve_arrow {
   background: url('/assets/sprites/layout-s6fde65c191.png') 0 0 no-repeat !important;
 }
 
-/* line 139, scss/partials/_layout.scss */
+/* line 139, /websites/cri/app/assets/stylesheets/scss/partials/_layout.scss */
 img.curve_arrow_white {
   background: url('/assets/sprites/layout-s6fde65c191.png') 0 -10px no-repeat !important;
 }
 
-/* line 1, scss/partials/_forms.scss */
+/* line 1, /websites/cri/app/assets/stylesheets/scss/partials/_forms.scss */
 label {
   display: block;
 }
 
-/* line 1, scss/partials/_overlay_modal.scss */
+/* line 1, /websites/cri/app/assets/stylesheets/scss/partials/_overlay_modal.scss */
 #basic-modal-content {
   display: none;
 }
 
 /* Overlay */
-/* line 6, scss/partials/_overlay_modal.scss */
+/* line 6, /websites/cri/app/assets/stylesheets/scss/partials/_overlay_modal.scss */
 #simplemodal-overlay {
   background-color: #000;
   cursor: wait;
@@ -272,7 +272,7 @@ label {
 }
 
 /* Container */
-/* line 25, scss/partials/_overlay_modal.scss */
+/* line 25, /websites/cri/app/assets/stylesheets/scss/partials/_overlay_modal.scss */
 #simplemodal-container {
   color: #777;
   border: 1px solid #c0bfbf;
@@ -287,7 +287,7 @@ label {
 }
 
 /*#simplemodal-container .simplemodal-data { padding : 8px; }*/
-/* line 39, scss/partials/_overlay_modal.scss */
+/* line 39, /websites/cri/app/assets/stylesheets/scss/partials/_overlay_modal.scss */
 #simplemodal-container code {
   background: #141414;
   border-left: 3px solid #65B43D;
@@ -298,12 +298,12 @@ label {
   padding: 4px 6px 6px;
 }
 
-/* line 48, scss/partials/_overlay_modal.scss */
+/* line 48, /websites/cri/app/assets/stylesheets/scss/partials/_overlay_modal.scss */
 #simplemodal-container a {
   /*  color : #ddd;*/
 }
 
-/* line 51, scss/partials/_overlay_modal.scss */
+/* line 51, /websites/cri/app/assets/stylesheets/scss/partials/_overlay_modal.scss */
 #simplemodal-container a.modalCloseImg {
   background: url(/images/close_button.png) no-repeat scroll 0px 0px transparent;
   width: 33px;
@@ -316,12 +316,12 @@ label {
   cursor: pointer;
 }
 
-/* line 62, scss/partials/_overlay_modal.scss */
+/* line 62, /websites/cri/app/assets/stylesheets/scss/partials/_overlay_modal.scss */
 #simplemodal-container h3 {
   color: #84b8d9;
 }
 
-/* line 3, scss/partials/_growl.scss */
+/* line 3, /websites/cri/app/assets/stylesheets/scss/partials/_growl.scss */
 #growlcontainer {
   position: fixed;
   right: 20px;
@@ -330,15 +330,15 @@ label {
   font-size: 1.1em;
   width: 400px;
 }
-/* line 11, scss/partials/_growl.scss */
+/* line 11, /websites/cri/app/assets/stylesheets/scss/partials/_growl.scss */
 #growlcontainer ol li {
   list-style: decimal inside none;
 }
-/* line 15, scss/partials/_growl.scss */
+/* line 15, /websites/cri/app/assets/stylesheets/scss/partials/_growl.scss */
 #growlcontainer .growlwithicon {
   padding-left: 50px;
 }
-/* line 18, scss/partials/_growl.scss */
+/* line 18, /websites/cri/app/assets/stylesheets/scss/partials/_growl.scss */
 #growlcontainer h2 {
   color: #fff;
   font-size: 1.4em;
@@ -346,13 +346,13 @@ label {
   margin-bottom: 5px;
   padding-bottom: 5px;
 }
-/* line 25, scss/partials/_growl.scss */
+/* line 25, /websites/cri/app/assets/stylesheets/scss/partials/_growl.scss */
 #growlcontainer li {
   font-size: .9em;
   margin-bottom: 5px;
 }
 
-/* line 31, scss/partials/_growl.scss */
+/* line 31, /websites/cri/app/assets/stylesheets/scss/partials/_growl.scss */
 .growlstatus {
   position: relative;
   background: url(/assets/growl/opacity_60.png) repeat scroll 0px 0px transparent;
@@ -367,12 +367,12 @@ label {
   -khtml-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 40, scss/partials/_growl.scss */
+/* line 40, /websites/cri/app/assets/stylesheets/scss/partials/_growl.scss */
 .growlstatus .growltitle {
   font-weight: bold;
   margin-bottom: 5px;
 }
-/* line 45, scss/partials/_growl.scss */
+/* line 45, /websites/cri/app/assets/stylesheets/scss/partials/_growl.scss */
 .growlstatus .growlstatusclose {
   position: absolute;
   top: 5px;
@@ -383,17 +383,17 @@ label {
   display: none;
   background: transparent url(/assets/growl/close.png) no-repeat;
 }
-/* line 55, scss/partials/_growl.scss */
+/* line 55, /websites/cri/app/assets/stylesheets/scss/partials/_growl.scss */
 .growlstatus:hover {
   background-color: #000;
   border: 3px #666 solid;
 }
-/* line 59, scss/partials/_growl.scss */
+/* line 59, /websites/cri/app/assets/stylesheets/scss/partials/_growl.scss */
 .growlstatus:hover .growlstatusclose {
   display: block;
 }
 
-/* line 65, scss/partials/_growl.scss */
+/* line 65, /websites/cri/app/assets/stylesheets/scss/partials/_growl.scss */
 #growlicon {
   height: 32px;
   width: 32px;
@@ -401,16 +401,16 @@ label {
   top: 6px;
   left: 9px;
 }
-/* line 72, scss/partials/_growl.scss */
+/* line 72, /websites/cri/app/assets/stylesheets/scss/partials/_growl.scss */
 #growlicon.growlicon_notice {
   background-image: url(/assets/growl/notice.png);
 }
-/* line 75, scss/partials/_growl.scss */
+/* line 75, /websites/cri/app/assets/stylesheets/scss/partials/_growl.scss */
 #growlicon.growlicon_error {
   background-image: url(/assets/growl/error.png);
 }
 
-/* line 17, scss/partials/_buttons.scss */
+/* line 17, /websites/cri/app/assets/stylesheets/scss/partials/_buttons.scss */
 button, input[type="submit"], input[type='button'], input.button, a.button {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -449,11 +449,11 @@ button, input[type="submit"], input[type='button'], input.button, a.button {
   background-image: -ms-linear-gradient(#ffffff, #d1d1d1);
   background-image: linear-gradient(#ffffff, #d1d1d1);
 }
-/* line 7, ../../../../../Users/younker/.rvm/gems/ruby-1.8.7-p352/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+/* line 7, /Users/younker/.rvm/gems/ruby-1.8.7-p352/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
 button, input[type="submit"], input[type='button'], input.button, a.button {
   *display: inline;
 }
-/* line 37, scss/partials/_buttons.scss */
+/* line 37, /websites/cri/app/assets/stylesheets/scss/partials/_buttons.scss */
 button:hover, input[type="submit"]:hover, input[type='button']:hover, input.button:hover, a.button:hover {
   background-color: #dedede;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f7f7f7), color-stop(100%, #c4c4c4));
@@ -465,7 +465,7 @@ button:hover, input[type="submit"]:hover, input[type='button']:hover, input.butt
   color: #5e5e5e;
   border-color: #5e5e5e;
 }
-/* line 44, scss/partials/_buttons.scss */
+/* line 44, /websites/cri/app/assets/stylesheets/scss/partials/_buttons.scss */
 button:active, input[type="submit"]:active, input[type='button']:active, input.button:active, a.button:active {
   background-color: #f2f2f2;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f7f7f7), color-stop(100%, #dedede));
@@ -478,46 +478,46 @@ button:active, input[type="submit"]:active, input[type='button']:active, input.b
   padding-bottom: 3px;
 }
 
-/* line 2, scss/partials/_standard_dl_layout.scss */
+/* line 2, /websites/cri/app/assets/stylesheets/scss/partials/_standard_dl_layout.scss */
 dl {
   margin-bottom: 3em;
 }
-/* line 5, scss/partials/_standard_dl_layout.scss */
+/* line 5, /websites/cri/app/assets/stylesheets/scss/partials/_standard_dl_layout.scss */
 dl dt {
   float: left;
   margin-right: 2em;
   height: 175px !important;
 }
-/* line 10, scss/partials/_standard_dl_layout.scss */
+/* line 10, /websites/cri/app/assets/stylesheets/scss/partials/_standard_dl_layout.scss */
 dl dt img {
   float: left;
   border: solid 1px #103d63;
   height: 152px;
   width: 152px;
 }
-/* line 19, scss/partials/_standard_dl_layout.scss */
+/* line 19, /websites/cri/app/assets/stylesheets/scss/partials/_standard_dl_layout.scss */
 dl.team_member .contact_info {
   display: none;
 }
-/* line 26, scss/partials/_standard_dl_layout.scss */
+/* line 26, /websites/cri/app/assets/stylesheets/scss/partials/_standard_dl_layout.scss */
 dl dd h3 {
   font-size: 1.4em !important;
   font-weight: 600 !important;
   margin: 0 0 0.5em !important;
 }
-/* line 29, scss/partials/_standard_dl_layout.scss */
+/* line 29, /websites/cri/app/assets/stylesheets/scss/partials/_standard_dl_layout.scss */
 dl dd h3 a {
   font-size: 1.4em !important;
   font-weight: 600 !important;
   margin: 0 0 0.5em !important;
 }
-/* line 33, scss/partials/_standard_dl_layout.scss */
+/* line 33, /websites/cri/app/assets/stylesheets/scss/partials/_standard_dl_layout.scss */
 dl dd h3 a.edit {
   font-family: helvetica;
   font-size: .6em;
   font-weight: 300;
 }
-/* line 40, scss/partials/_standard_dl_layout.scss */
+/* line 40, /websites/cri/app/assets/stylesheets/scss/partials/_standard_dl_layout.scss */
 dl dd h4 {
   color: #4e5c67 !important;
   font-size: 1.2em;
@@ -525,13 +525,13 @@ dl dd h4 {
   margin: 0 0 0.5em;
 }
 
-/* line 3, scss/partials/_blog_show.scss */
+/* line 3, /websites/cri/app/assets/stylesheets/scss/partials/_blog_show.scss */
 #blog_show header h1 {
   font-size: 1.4em !important;
   font-weight: 600 !important;
   margin: 0 0 0.5em !important;
 }
-/* line 4, scss/partials/_blog_show.scss */
+/* line 4, /websites/cri/app/assets/stylesheets/scss/partials/_blog_show.scss */
 #blog_show header h4 {
   color: #4e5c67 !important;
   font-size: 1.2em;
@@ -539,7 +539,7 @@ dl dd h4 {
   margin: 0 0 0.5em;
 }
 
-/* line 3, scss/partials/_contact_form.scss */
+/* line 3, /websites/cri/app/assets/stylesheets/scss/partials/_contact_form.scss */
 #new_contactC {
   color: #f0f0f0;
   -moz-border-radius: 5px;
@@ -551,7 +551,7 @@ dl dd h4 {
   background-color: #103d63;
   padding: 30px;
 }
-/* line 10, scss/partials/_contact_form.scss */
+/* line 10, /websites/cri/app/assets/stylesheets/scss/partials/_contact_form.scss */
 #new_contactC h3 {
   color: #f0f0f0 !important;
   font-size: 1.2em;
@@ -559,11 +559,11 @@ dl dd h4 {
   margin-bottom: 2em;
   padding-right: 15px;
 }
-/* line 18, scss/partials/_contact_form.scss */
+/* line 18, /websites/cri/app/assets/stylesheets/scss/partials/_contact_form.scss */
 #new_contactC h3, #new_contactC p {
   line-height: 1.8em;
 }
-/* line 22, scss/partials/_contact_form.scss */
+/* line 22, /websites/cri/app/assets/stylesheets/scss/partials/_contact_form.scss */
 #new_contactC textarea, #new_contactC input[type="email"], #new_contactC input[type="text"] {
   background-color: #f0f0f0;
   -moz-border-radius: 5px;
@@ -574,27 +574,27 @@ dl dd h4 {
   border-radius: 5px;
   width: 100%;
 }
-/* line 28, scss/partials/_contact_form.scss */
+/* line 28, /websites/cri/app/assets/stylesheets/scss/partials/_contact_form.scss */
 #new_contactC .field {
   margin-bottom: 1em;
 }
-/* line 32, scss/partials/_contact_form.scss */
+/* line 32, /websites/cri/app/assets/stylesheets/scss/partials/_contact_form.scss */
 #new_contactC textarea {
   height: 150px;
 }
 
-/* line 2, scss/partials/_faq.scss */
+/* line 2, /websites/cri/app/assets/stylesheets/scss/partials/_faq.scss */
 #single_faq dl.faq {
   margin-top: 2em;
 }
-/* line 4, scss/partials/_faq.scss */
+/* line 4, /websites/cri/app/assets/stylesheets/scss/partials/_faq.scss */
 #single_faq dl.faq dt {
   float: none;
   height: auto !important;
   font-size: 1.2em;
   margin-bottom: .5em;
 }
-/* line 11, scss/partials/_faq.scss */
+/* line 11, /websites/cri/app/assets/stylesheets/scss/partials/_faq.scss */
 #single_faq dl.faq dd {
   margin-bottom: 3em;
 }
@@ -683,7 +683,7 @@ a:hover {
   margin-left: 5px;
   padding-left: 10px;
 }
-/* line 7, ../../../../../Users/younker/.rvm/gems/ruby-1.8.7-p352/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+/* line 7, /Users/younker/.rvm/gems/ruby-1.8.7-p352/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
 #right_col ul li.selected {
   *display: inline;
 }
@@ -702,12 +702,12 @@ div.pagination {
   text-align: center;
 }
 
-/* line 11, scss/partials/_homepage.scss */
+/* line 11, /websites/cri/app/assets/stylesheets/scss/partials/_homepage.scss */
 #single_homepage nav.banner .container {
   position: relative;
   height: 100%;
 }
-/* line 15, scss/partials/_homepage.scss */
+/* line 15, /websites/cri/app/assets/stylesheets/scss/partials/_homepage.scss */
 #single_homepage nav.banner .container header {
   font-size: 3.8em;
   margin: 77px 0 23px 0;
@@ -716,7 +716,7 @@ div.pagination {
   font-family: 'DroidSerifItalic', Georgia, serif;
   text-shadow: #f0f0f0 1px 1px 1px;
 }
-/* line 24, scss/partials/_homepage.scss */
+/* line 24, /websites/cri/app/assets/stylesheets/scss/partials/_homepage.scss */
 #single_homepage nav.banner .container > img#child {
   background: url('/assets/sprites/homepage-s31e61b8757.png') 0 -17px no-repeat !important;
   height: 301px;
@@ -725,65 +725,65 @@ div.pagination {
   top: 1px;
   right: 10px;
 }
-/* line 36, scss/partials/_homepage.scss */
+/* line 36, /websites/cri/app/assets/stylesheets/scss/partials/_homepage.scss */
 #single_homepage #homepage_contentC {
   margin: 33px 0;
 }
-/* line 39, scss/partials/_homepage.scss */
+/* line 39, /websites/cri/app/assets/stylesheets/scss/partials/_homepage.scss */
 #single_homepage #homepage_contentC .icon {
   float: left;
   margin-right: 19px;
 }
-/* line 43, scss/partials/_homepage.scss */
+/* line 43, /websites/cri/app/assets/stylesheets/scss/partials/_homepage.scss */
 #single_homepage #homepage_contentC .icon.body {
   background: url('/assets/sprites/homepage-s31e61b8757.png') 0 0 no-repeat !important;
   width: 17px;
   height: 17px;
 }
-/* line 48, scss/partials/_homepage.scss */
+/* line 48, /websites/cri/app/assets/stylesheets/scss/partials/_homepage.scss */
 #single_homepage #homepage_contentC .icon.folder {
   background: url('/assets/sprites/homepage-s31e61b8757.png') 0 -364px no-repeat !important;
   width: 22px;
   height: 15px;
 }
-/* line 53, scss/partials/_homepage.scss */
+/* line 53, /websites/cri/app/assets/stylesheets/scss/partials/_homepage.scss */
 #single_homepage #homepage_contentC .icon.notepad {
   background: url('/assets/sprites/homepage-s31e61b8757.png') 0 -378px no-repeat !important;
   width: 22px;
   height: 22px;
 }
-/* line 60, scss/partials/_homepage.scss */
+/* line 60, /websites/cri/app/assets/stylesheets/scss/partials/_homepage.scss */
 #single_homepage #homepage_contentC h3 {
   font-family: 'DroidSerifRegular', Georgia, serif;
   font-size: 1.45em;
   margin-bottom: 20px;
 }
-/* line 67, scss/partials/_homepage.scss */
+/* line 67, /websites/cri/app/assets/stylesheets/scss/partials/_homepage.scss */
 #single_homepage #homepage_contentC img.wwa_img {
   height: 150px;
   width: 293px;
   border: solid 1px #103d63;
   margin-bottom: 20px;
 }
-/* line 74, scss/partials/_homepage.scss */
+/* line 74, /websites/cri/app/assets/stylesheets/scss/partials/_homepage.scss */
 #single_homepage #homepage_contentC img.cp_img {
   max-height: 150px;
   max-width: 293px;
   border: solid 1px #103d63;
   margin-bottom: 20px;
 }
-/* line 81, scss/partials/_homepage.scss */
+/* line 81, /websites/cri/app/assets/stylesheets/scss/partials/_homepage.scss */
 #single_homepage #homepage_contentC img#who_we_are {
   background: url('/assets/sprites/homepage-s31e61b8757.png') 0 -400px no-repeat !important;
 }
-/* line 86, scss/partials/_homepage.scss */
+/* line 86, /websites/cri/app/assets/stylesheets/scss/partials/_homepage.scss */
 #single_homepage #homepage_contentC p {
   font-weight: 500;
   line-height: 2.2em;
   padding-right: 13px;
   margin-bottom: 1em;
 }
-/* line 94, scss/partials/_homepage.scss */
+/* line 94, /websites/cri/app/assets/stylesheets/scss/partials/_homepage.scss */
 #single_homepage #homepage_contentC ul li {
   font-weight: 500;
   line-height: 3em;
