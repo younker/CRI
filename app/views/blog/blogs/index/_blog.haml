@@ -13,7 +13,8 @@
 
     = link_to 'Read more', construct_blog_path(blog, :show), :class => :button
 
-    - if can?(:edit, Blog)
+    -# FIXME -- younker [2011-11-21 17:49] -- Why is this not working?!!
+    -# if can?(:edit, blog)
       = link_to 'Edit Project Blog', construct_blog_path(blog, :edit), :class => :button
 
 

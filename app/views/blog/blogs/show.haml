@@ -1,6 +1,7 @@
 :ruby
-  header(:right_col, render(:partial => 'blog/blogs/show/other_blogs'))
-  path = construct_blog_path(@blog, :show)
+  if @other_blogs.present?
+    header(:right_col, render(:partial => 'blog/blogs/show/other_blogs'))
+  end
 
 
 %section{:id => 'blog_show'}

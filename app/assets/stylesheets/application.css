@@ -539,6 +539,10 @@ dl dd h4 {
   font-weight: 500;
   margin: 0 0 0.5em;
 }
+/* line 7, scss/partials/_blog_show.scss */
+#blog_show img {
+  border: solid 1px #103d63;
+}
 
 /* line 3, scss/partials/_contact_form.scss */
 #new_contactC {
@@ -632,12 +636,12 @@ p {
   line-height: 1.6em;
 }
 /* line 40, scss/application.scss */
-p a {
+p a:not(.button) {
   font-weight: 500;
   text-decoration: underline !important;
 }
 /* line 44, scss/application.scss */
-p a:hover {
+p a:not(.button):hover {
   text-decoration: none !important;
 }
 

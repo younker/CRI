@@ -3,4 +3,8 @@
 		h1 { @include page-title(); }
 		h4 { @include sub-title(); }
 	}
+
+	img {
+		border : solid 1px $primary-blue;
+	}
 }
