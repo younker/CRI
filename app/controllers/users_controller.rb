@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  force_ssl :only => [:new, :create]
+  # force_ssl :only => [:new, :create]
 
   load_and_authorize_resource :only => [:edit, :update, :destroy]
 
