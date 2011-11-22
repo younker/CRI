@@ -56,8 +56,9 @@ Cri::Application.configure do
   # Don't fallback to assets pipeline if a precompiled asset is missed
   config.assets.compile = true
 
+  # http://stackoverflow.com/questions/8219779/sass-tries-to-use-the-compiled-css-as-the-sprite-filename-in-production
   # Generate digests for assets URLs
-  config.assets.digest = true
+  # config.assets.digest = true
 
   config.assets.debug = true
 
