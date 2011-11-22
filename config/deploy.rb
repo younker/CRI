@@ -27,6 +27,8 @@ set :webfaction_db_username, "cri_prod"
 # set :database_yml_template, "database.yml"
 
 set :deploy_to, "/home/#{webfaction_username}/webapps-releases/#{app_name}"
+
+set :keep_releases, 10
  
 set :scm, :git
 set :scm_user, "younker"
