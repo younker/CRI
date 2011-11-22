@@ -57,7 +57,8 @@ namespace :deploy do
     run "ln -nfs #{release_path} #{deploy_to}/current"
     run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
     run "ln -nfs #{shared_path}/config/contact.yml #{release_path}/config/contact.yml"
-    run "ln -nfs #{shared_path}/assets #{release_path}/public/"
+    run "ln -nfs #{shared_path}/assets/images/blog #{release_path}/app/assets/images/blog"
+    # run "ln -nfs #{shared_path}/assets #{release_path}/public/"
     run "ln -nfs #{shared_path}/certs #{release_path}"
   end
 
