@@ -6,7 +6,7 @@
 %section#blogs_index
   - if @blogs.empty?
     %strong
-      We're sorry, but no projects currently exist. Please check back soon as this issue is temporary.
+      = "We're sorry, but no #{@context.context_type.humanize.downcase} currently exist. Please check back soon as this issue is temporary."
 
   - else
     = render :partial => 'blog/blogs/index/blog', :collection => @blogs
