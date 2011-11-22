@@ -1,4 +1,5 @@
 :ruby
+  header(:header_title, "#{@context.context_type.humanize}")
   header(:right_col, render(:partial => 'blog/blogs/index/other_articles'))
   header(:breadcrumb, breadcrumb('Projects'))
 

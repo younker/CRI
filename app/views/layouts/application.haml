@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title= content_for?(:header_title) ? yield(:header_title) : "Welcome"
+    %title= content_for?(:header_title) ? "#{yield(:header_title)} -- Child Refuge International" : "Child Refuge International"
 
     -# %link{:rel => 'icon', :type => 'image/png', :href => '/images/favicon.png'}
     %meta{'name' => 'keywords', :content => yield(:keywords) }/

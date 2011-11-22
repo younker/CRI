@@ -1,4 +1,9 @@
 :ruby
+  header(:header_title, "#{@blog.title} -- #{@blog.context.context_type.humanize}")
+  header(:keywords, "cri, child refuge international")
+  header(:description, "CRI seeks to confront the HIV/AIDS pandemic’s attack on children, particularly those who have suffered from abuse: sexual, physical, and systemic.")
+
+
   if @other_blogs.present?
     header(:right_col, render(:partial => 'blog/blogs/show/other_blogs'))
   end
