@@ -15,8 +15,8 @@ GIT
 
 GIT
   remote: git@github.com:younker/team.git
-  revision: 90548df6ef8d2770881170c2cc9d4b0c6d038366
-  tag: v0.1
+  revision: daea25007971dd4e3546b3c5b96239249dcd3bd9
+  tag: v0.2
   specs:
     team (0.0.1)
       haml-rails
