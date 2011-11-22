@@ -1,11 +1,10 @@
 @import "compass/css3/text-shadow";
+@import "compass/utilities/sprites/base";
 
 $homepage_images : sprite-map("sprites/homepage/*.png");
 
 @mixin homepage_image($image_name) {
-//  background : sprite($homepage_images, $image_name) no-repeat !important;
-	background : url(/assets/sprites/homepage/#{$image_name}.png) no-repeat scroll 0 0 transparent !important;
-
+  background : sprite($homepage_images, $image_name) no-repeat !important;
 }
 
 #single_homepage {

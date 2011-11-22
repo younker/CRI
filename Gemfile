@@ -23,9 +23,10 @@ gem "team", :git => 'git@github.com:younker/team.git', :tag => 'v0.1'
 # Deploy with Capistrano
 gem 'capistrano'
 
-gem 'compass'
+gem 'compass', "0.11.3"
 gem 'sass-rails', "~> 3.1.4"
 gem 'rb-fsevent'
 gem 'uglifier'
 gem 'execjs'
 gem 'therubyracer'
+
