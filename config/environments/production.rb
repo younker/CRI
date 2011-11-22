@@ -58,7 +58,7 @@ Cri::Application.configure do
 
   # http://stackoverflow.com/questions/8219779/sass-tries-to-use-the-compiled-css-as-the-sprite-filename-in-production
   # Generate digests for assets URLs
-  # config.assets.digest = true
+  config.assets.digest = false
 
   config.assets.debug = true
 
