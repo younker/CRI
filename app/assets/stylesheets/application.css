@@ -718,7 +718,7 @@ div.pagination {
 }
 /* line 26, scss/partials/_homepage.scss */
 #single_homepage nav.banner .container > img#child {
-  background: url(/assets/sprites/layout/child.png) no-repeat scroll 0 0 transparent !important;
+  background: url(/assets/sprites/homepage/child.png) no-repeat scroll 0 0 transparent !important;
   height: 301px;
   width: 298px;
   position: absolute;
@@ -736,19 +736,19 @@ div.pagination {
 }
 /* line 45, scss/partials/_homepage.scss */
 #single_homepage #homepage_contentC .icon.body {
-  background: url(/assets/sprites/layout/body-icon.png) no-repeat scroll 0 0 transparent !important;
+  background: url(/assets/sprites/homepage/body-icon.png) no-repeat scroll 0 0 transparent !important;
   width: 17px;
   height: 17px;
 }
 /* line 50, scss/partials/_homepage.scss */
 #single_homepage #homepage_contentC .icon.folder {
-  background: url(/assets/sprites/layout/folder-icon.png) no-repeat scroll 0 0 transparent !important;
+  background: url(/assets/sprites/homepage/folder-icon.png) no-repeat scroll 0 0 transparent !important;
   width: 22px;
   height: 15px;
 }
 /* line 55, scss/partials/_homepage.scss */
 #single_homepage #homepage_contentC .icon.notepad {
-  background: url(/assets/sprites/layout/notepad-icon.png) no-repeat scroll 0 0 transparent !important;
+  background: url(/assets/sprites/homepage/notepad-icon.png) no-repeat scroll 0 0 transparent !important;
   width: 22px;
   height: 22px;
 }
@@ -774,7 +774,7 @@ div.pagination {
 }
 /* line 83, scss/partials/_homepage.scss */
 #single_homepage #homepage_contentC img#who_we_are {
-  background: url(/assets/sprites/layout/who_we_are.png) no-repeat scroll 0 0 transparent !important;
+  background: url(/assets/sprites/homepage/who_we_are.png) no-repeat scroll 0 0 transparent !important;
 }
 /* line 88, scss/partials/_homepage.scss */
 #single_homepage #homepage_contentC p {
