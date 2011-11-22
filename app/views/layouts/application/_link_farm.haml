@@ -16,7 +16,7 @@
 
 
   - if for_section == :footer
-    %li= link_to_unless current_page?(contact_path), 'Contact Us', contact_path
+    %li= link_to_unless current_page?(main_app.contact_path), 'Contact Us', main_app.contact_path
 
     - if controller.logged_in?
       - edit_user = main_app.edit_user_path(controller.current_user)
